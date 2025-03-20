@@ -1,0 +1,78 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 280px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* Contenedor principal */
+.container {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botón */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Contenedor de correos */
+#correoContainer {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Lista de correos */
+ul#correo-lista {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+ul#correo-lista li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Correos sospechosos en rojo */
+ul#correo-lista li.sospechoso {
+    color: red;
+    font-weight: bold;
+}
+
+/* Mensajes de estado */
+#statusMessage {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
