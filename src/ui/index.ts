@@ -94,7 +94,7 @@ function createHomePage(): HTMLElement {
     </div>
 
     <div style="text-align: center; font-size: 11px; color: #9e9e9e; padding: 12px 0; border-top: 1px solid rgba(0, 0, 0, 0.08);">
-      v0.3.0
+      v0.3.1
     </div>
   `;
 

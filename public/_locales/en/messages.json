@@ -457,7 +457,7 @@
     "placeholders": {
       "1": {
         "content": "$1",
-        "example": "0.3.0"
+        "example": "0.3.1"
       }
     }
   },
