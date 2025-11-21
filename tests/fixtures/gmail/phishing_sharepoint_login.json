@@ -1,0 +1,102 @@
+{
+  "id": "phishing_009_sharepoint_login",
+  "threadId": "phishing_009_sharepoint_login",
+  "labelIds": [
+    "UNREAD",
+    "CATEGORY_UPDATES",
+    "INBOX"
+  ],
+  "snippet": "A new SharePoint document requires your sign-in. Sender: Contoso Logistics File: FY25 Master Contract.pdf Access will expire in 6 hours...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "user@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7220:14a8:b0:1a2:a1a5:36a5 with SMTP id ok22csp778995rdb; Wed, 12 Nov 2025 06:48:11 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<files@contoso-secure.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from sharepoint.contoso-secure.com (outbound.contoso-secure.com. [193.56.21.87]) by mx.google.com with ESMTPS id q15-20020a5d4c37000000b002aa7e3f239dsi1827363qka.234.2025.11.12.06.48.10 for <user@example.com>; Wed, 12 Nov 2025 06:48:11 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (no key for signature) header.i=@contoso-secure.com; spf=fail (google.com: domain of files@contoso-secure.com does not designate 193.56.21.87 as permitted sender) smtp.mailfrom=files@contoso-secure.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=contoso.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251112064810.445566@contoso-secure.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Wed, 12 Nov 2025 06:48:10 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Contoso Logistics shared \"FY25 Master Contract.pdf\" with you"
+      },
+      {
+        "name": "From",
+        "value": "SharePoint Online <sharepoint@contoso.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "SharePoint Online <files@contoso-secure.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 248,
+          "data": "QSBuZXcgU2hhcmVQb2ludCBkb2N1bWVudCByZXF1aXJlcyB5b3VyIHNpZ24taW4uCgpTZW5kZXI6IENvbnRvc28gTG9naXN0aWNzCkZpbGU6IEZZMjUgTWFzdGVyIENvbnRyYWN0LnBkZgoKQWNjZXNzIHdpbGwgZXhwaXJlIGluIDYgaG91cnMuCmh0dHBzOi8vY29udG9zby1maWxlcy5zaGFyZXBvaW50LWFjY2Vzcy5jb20vc2VjdXJlLWxvZ2lu"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 680,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OidTZWdvZSBVSScsc2Fucy1zZXJpZjtiYWNrZ3JvdW5kOiNmNWY3ZmI7cGFkZGluZzoyNHB4Ij48ZGl2IHN0eWxlPSJtYXgtd2lkdGg6NTIwcHg7bWFyZ2luOjAgYXV0bztiYWNrZ3JvdW5kOiNmZmY7Ym9yZGVyOjFweCBzb2xpZCAjZGRlM2YwO2JvcmRlci1yYWRpdXM6OHB4O3BhZGRpbmc6MjRweCI-PGgyIHN0eWxlPSJjb2xvcjojMzE2NGQ0O21hcmdpbi10b3A6MCI-U2hhcmVkIGRvY3VtZW50IHBlbmRpbmc8L2gyPjxwPkNvbnRvc28gTG9naXN0aWNzIGhhcyBzaGFyZWQgPHN0cm9uZz5GWTI1IE1hc3RlciBDb250cmFjdC5wZGY8L3N0cm9uZz4gd2l0aCB5b3UgaW4gU2hhcmVQb2ludC48L3A-PHAgc3R5bGU9Im1hcmdpbjoyNHB4IDAiPjxhIGhyZWY9Imh0dHBzOi8vY29udG9zby1maWxlcy5zaGFyZXBvaW50LWFjY2Vzcy5jb20vc2VjdXJlLWxvZ2luIiBzdHlsZT0iYmFja2dyb3VuZDojMzE2NGQ0O2NvbG9yOiNmZmY7cGFkZGluZzoxMnB4IDI0cHg7Ym9yZGVyLXJhZGl1czo0cHg7dGV4dC1kZWNvcmF0aW9uOm5vbmUiPlZpZXcgZG9jdW1lbnQ8L2E-PC9wPjxwIHN0eWxlPSJjb2xvcjojNmI3MjgwO2ZvbnQtc2l6ZToxM3B4Ij5JZiB5b3UgZG9u4oCZdCByZXNwb25kIHdpdGhpbiA2IGhvdXJzIHRoZSBzZW5kZXIgd2lsbCByZXZva2UgYWNjZXNzLjwvcD48L2Rpdj48L2JvZHk-PC9odG1sPg"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5120,
+  "historyId": "4455667788"
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DHL Delivery Notification</title>
+<meta charset="UTF-8">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.container {
+  max-width: 650px;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ddd;
+}
+.header {
+  background: #ffcc00;
+  padding: 25px 20px;
+  text-align: center;
+}
+.header h1 {
+  color: #d40511;
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+.content {
+  padding: 30px 25px;
+}
+.content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+.alert-box {
+  background: #fff9e0;
+  border: 2px solid #ffc900;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.alert-box h2 {
+  color: #d40511;
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+.package-details {
+  background: #f9f9f9;
+  border-left: 4px solid #d40511;
+  padding: 20px;
+  margin: 20px 0;
+}
+.package-details h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+}
+.package-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+.package-details li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  color: #555;
+}
+.package-details li strong {
+  color: #222;
+  font-weight: 600;
+  min-width: 160px;
+  display: inline-block;
+}
+.button-container {
+  text-align: center;
+  margin: 30px 0;
+}
+.reschedule-button {
+  display: inline-block;
+  background: #d40511;
+  color: white;
+  padding: 16px 50px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.reschedule-button:hover {
+  background: #aa040d;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+.instructions-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+.instructions-box h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+}
+.instructions-box ol {
+  padding-left: 25px;
+  margin: 15px 0;
+}
+.instructions-box li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+.warning-box {
+  background: #ffeded;
+  border: 2px solid #d40511;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 6px;
+}
+.warning-box p {
+  margin: 0;
+  font-size: 16px;
+  color: #d40511;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+}
+.fee-notice {
+  background: #e8fff3;
+  border: 1px solid #00c853;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+.fee-notice p {
+  margin: 0;
+  font-size: 14px;
+  color: #006c35;
+}
+.fee-notice strong {
+  font-size: 18px;
+  color: #006c35;
+}
+.footer {
+  background: #f0f0f0;
+  padding: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+.footer p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>DHL</h1>
+    <p style="color: #d40511; margin: 8px 0 0; font-size: 16px; font-weight: 600;">Express Delivery Service</p>
+  </div>
+  
+  <div class="content">
+    <div class="alert-box">
+      <h2>🚚 Delivery Attempt Failed</h2>
+      <p style="margin: 0; font-size: 15px; color: #555; font-weight: normal;">We attempted to deliver your package but no one was available.</p>
+    </div>
+    
+    <p style="font-size: 16px;">Dear Customer,\n    </p>
+    
+    <p>This is to inform you that our delivery attempt on <strong>November 10, 2025 at 8:30 AM</strong> was unsuccessful. No one was available at the delivery address to receive the package.</p>
+    
+    <div class="package-details">
+      <h3>Package Information</h3>
+      <ul>
+        <li><strong>Tracking Number:</strong> <span style="color: #d40511; font-weight: bold;">DHL-2025-9847563</span></li>
+        <li><strong>Shipment Weight:</strong> 2.5 kg</li>
+        <li><strong>Delivery Attempt:</strong> November 10, 2025 at 8:30 AM</li>
+        <li><strong>ReaYn:</strong> No one available to receive package</li>
+        <li><strong>Next Attempt:</strong> Pending your confirmation</li>
+      </ul>
+    </div>
+    
+    <div class="fee-notice">
+      <p>Redelivery Fee: <strong>$3.99</strong></p>
+    </div>
+    
+    <div class="instructions-box">
+      <h3>To Reschedule Your Delivery:</h3>
+      <ol>
+        <li>Click the "Reschedule Delivery" button below</li>
+        <li>Verify your delivery address and contact information</li>
+        <li>Select a new delivery date and time slot</li>
+        <li>Pay the redelivery fee of $3.99</li>
+      </ol>
+    </div>
+    
+    <div class="button-container">
+      <a href="http://dhl-parcel-tracking-reschedule.suspicious-domain.com/track?id=9847563&code=XYZ789" class="reschedule-button">
+        RESCHEDULE DELIVERY NOW
+      </a>
+    </div>
+    
+    <div class="warning-box">
+      <p ⚠ IMPORTANT: If you do not take action within 48 hours, your package will be returned to the sender. No refund will be issued for shipping costs.</p>
+    </div>
+    
+    <hr class="divider">
+    
+    <p style="font-size: 13px; color: #777;">
+      NOTE: This is an automated notification. Please do not reply to this email. For assistance, visit our website or contact customer service.
+    </p>
+    
+    <p style="font-size: 14px; color: #666;">Thank you for choosing DHL Express.</p>
+  </div>
+  
+  <div class="footer">
+    <p style="font-weight: 600; color: #505050;">© 2025 DHL International GmbH. All rights reserved.</p>
+    <p>DHL Express<br>Document and Package Delivery</p>
+    <p style="font-size: 10px; margin-top: 15px; color: #999;">This email was sent to code14565@gmail.com regarding package DHL-2025-9847563.</p>
+  </div>
+</div>
+</body>
+</html>

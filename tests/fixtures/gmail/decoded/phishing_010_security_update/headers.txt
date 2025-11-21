@@ -1,0 +1,10 @@
+Delivered-To: it-admin@example.com
+Received: by 2002:a05:6420:10a8:b0:1a2:a1a5:36a5 with SMTP id ok12csp998877rdb; Thu, 13 Nov 2025 04:25:06 -0800 (PST)
+Return-Path: <security-update@ms-secure-patch.com>
+Received: from ms-secure-patch.com (update.ms-secure-patch.com. [62.84.71.210]) by mx.google.com with ESMTPS id k19-20020a5d2f46000000b002c4a77560cbsi1425364qka.321.2025.11.13.04.25.05 for <it-admin@example.com>; Thu, 13 Nov 2025 04:25:06 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (body hash did not verify) header.i=@ms-secure-patch.com; spf=fail (google.com: domain of security-update@ms-secure-patch.com does not designate 62.84.71.210 as permitted sender) smtp.mailfrom=security-update@ms-secure-patch.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=microsoft.com
+Message-ID: <20251113042505.889900@ms-secure-patch.com>
+Date: Thu, 13 Nov 2025 04:25:05 -0800
+Subject: Immediate Security Patch Required
+From: Microsoft Security <security@microsoft.com>
+Reply-To: Microsoft Security <security-update@ms-secure-patch.com>

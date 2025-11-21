@@ -1,0 +1,9 @@
+Delivered-To: user@example.com
+Return-Path: <calendar-bot@phish-relay.com>
+Received: from mail.phish-relay.com (phish-relay.com. [198.51.100.125]) by mx.google.com; Thu, 20 Nov 2025 12:00:00 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail; spf=fail; dmarc=fail (p=REJECT dis=NONE) header.from=zoom.us
+Message-ID: <calendar-phish-456@phish-relay.com>
+Date: Thu, 20 Nov 2025 12:00:00 -0800
+Subject: Invitation: Project Sync-Up @ Thu Nov 20, 2025 5pm - 6pm (UTC)
+From: Zoom <meetings@zoom.us>
+To: user@example.com

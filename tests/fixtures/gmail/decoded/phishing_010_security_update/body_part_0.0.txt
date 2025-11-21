@@ -1,0 +1,7 @@
+Dear User,
+
+We detected outdated security components on your device. Download the mandatory patch within 1 hour to avoid service interruption.
+
+Attachment: SecurityPatch.html
+
+Security Operations

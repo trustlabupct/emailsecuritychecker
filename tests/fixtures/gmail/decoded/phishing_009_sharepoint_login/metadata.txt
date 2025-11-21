@@ -1,0 +1,8 @@
+Email ID: phishing_009_sharepoint_login
+Subject: Contoso Logistics shared "FY25 Master Contract.pdf" with you
+From: SharePoint Online <sharepoint@contoso.com>
+To: 
+Date: Wed, 12 Nov 2025 06:48:10 -0800
+
+================================================================================
+

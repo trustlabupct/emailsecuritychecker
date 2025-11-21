@@ -1,0 +1,93 @@
+{
+  "id": "phishing_018_calendar_invite",
+  "threadId": "phishing_018_calendar_invite",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "You are invited to Project Sync-Up. Please see the attached invitation.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "user@example.com"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<calendar-bot@phish-relay.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.phish-relay.com (phish-relay.com. [198.51.100.125]) by mx.google.com; Thu, 20 Nov 2025 12:00:00 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail; spf=fail; dmarc=fail (p=REJECT dis=NONE) header.from=zoom.us"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<calendar-phish-456@phish-relay.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Thu, 20 Nov 2025 12:00:00 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Invitation: Project Sync-Up @ Thu Nov 20, 2025 5pm - 6pm (UTC)"
+      },
+      {
+        "name": "From",
+        "value": "Zoom <meetings@zoom.us>"
+      },
+      {
+        "name": "To",
+        "value": "user@example.com"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          }
+        ],
+        "body": {
+          "size": 100,
+          "data": "WW91IGFyZSBpbnZpdGVkIHRvIFByb2plY3QgU3luYy1VcC4gUGxlYXNlIG9wZW4gdGhlIGF0dGFjaGVkIGludml0YXRpb24gdG8gcnN2cC4="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/calendar",
+        "filename": "invite.ics",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/calendar; name=\"invite.ics\""
+          },
+          {
+            "name": "Content-Disposition",
+            "value": "attachment; filename=\"invite.ics\""
+          }
+        ],
+        "body": {
+          "size": 450,
+          "data": "QkVHSU46VkNBTEVOREFSDVZFUlNJT046Mi4wClBST0RJRDotLy9oYWNrc3cvaGFuZGNhbC8vTk9OU0dNTCB2MS4wLy9FTgpCRUdJTjpWRVZFTlQKVUlEOnVpZDFAZXhhbXBsZS5jb20KRFRTVEFNUDoyMDI1MTEyMFQxNzAwMDBaCk9SR0FOSVpFUjtDTj0iWm9vbSI6TUFJTFRPOm1lZXRpbmdzQHpvb20udXMKRFRTVEFSVDoyMDI1MTEyMFQxNzAwMDBaCkRURU5EOjIwMjUxMTIwVDE4MDAwMFoKU1VNTUFSWTpQcm9qZWN0IFN5bmMtVXAKREVTQ1JJUFRJT046UGxlYXNlIGpvaW4gdGhlIHByb2plY3Qgc3luYy11cCBtZWV0aW5nLlxuXG5Kb2luIGZyb20gUEMsIE1hYywgTGludXgsIGlPUyBvciBBbmRyb2lkOiBodHRwczovL3VzMDR3ZWIuejAwbS51cy9qLzEyMzQ1Njc4OTA/cHdkPUZBS0VfUEFTU1dPUkQKTE9DQVRJT046aHR0cHM6Ly91czA0d2ViLnowMG0udXMvai8xMjM0NTY3ODkwP3B3ZD1GQUtFX1BBU1NXT1JEClBFTkQ6VkVWRU5UCkVORDpWQ0FMRU5EQVI="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 2000,
+  "historyId": "phishing_018_calendar_invite"
+}

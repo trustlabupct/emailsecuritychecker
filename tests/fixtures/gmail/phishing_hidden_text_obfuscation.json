@@ -1,0 +1,65 @@
+{
+  "id": "phishing_020_hidden_html",
+  "threadId": "phishing_020_hidden_html",
+  "labelIds": [
+    "UNREAD",
+    "IMPORTANT",
+    "INBOX"
+  ],
+  "snippet": "Corporate Expense Adjustment - hidden payment instructions enclosed.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      { "name": "Delivered-To", "value": "code14565@gmail.com" },
+      { "name": "Return-Path", "value": "<finance@secure-ledger.support>" },
+      {
+        "name": "Received",
+        "value": "from relay.secure-ledger.support (198.51.100.99) by mx.google.com with ESMTPS id demo999; Wed, 13 Nov 2025 07:22:44 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (bad sig) header.i=@secure-ledger.support; spf=fail (google.com: domain of finance@secure-ledger.support does not designate 198.51.100.99 as permitted sender) smtp.mailfrom=finance@secure-ledger.support; dmarc=fail (p=REJECT) header.from=ledger.com"
+      },
+      { "name": "Message-ID", "value": "<hiddenhtml88@secure-ledger.support>" },
+      { "name": "Date", "value": "Wed, 13 Nov 2025 07:22:42 -0800" },
+      { "name": "Subject", "value": "Corporate Expense Adjustment" },
+      { "name": "From", "value": "Ledger Accounts <accounts@ledger.com>" },
+      { "name": "To", "value": "code14565@gmail.com" },
+      { "name": "Content-Type", "value": "multipart/alternative; boundary=\"boundary_hidden_html\"" }
+    ],
+    "body": { "size": 0 },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/plain; charset=\"UTF-8\"" },
+          { "name": "Content-Transfer-Encoding", "value": "base64" }
+        ],
+        "body": {
+          "size": 92,
+          "data": "TmV3IHJlbWl0dGFuY2UgZGV0YWlscyBhdHRhY2hlZC4gVXNlIHRoZSBzZWN1cmUgdmlld2VyLg=="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/html; charset=\"UTF-8\"" },
+          { "name": "Content-Transfer-Encoding", "value": "base64" }
+        ],
+        "body": {
+          "size": 600,
+          "data": "PCFET0NUWVBFIGh0bWw+PGh0bWw+PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OkFyaWFsIj4KPGRpdiBzdHlsZT0iYmFja2dyb3VuZDojMjIyO2NvbG9yOiNmZmY7cGFkZGluZzoxNnB4Ij4KICA8aDI+Q29ycG9yYXRlIEV4cGVuc2UgQWRqdXN0bWVudDwvaDI+CiAgPHA+RG93bmxvYWQgdGhlIGF0dGFjaGVkIHNlY3VyZSB2aWV3ZXIgdG8gc2VlIHRoZSBpbnZvaWNlLjwvcD4KICA8YSBocmVmPSJodHRwczovL3NlY3VyZS1sZWRnZXIuc3VwcG9ydC9kb3dubG9hZCIgc3R5bGU9ImNvbG9yOiNmZmI0MDAiPk9wZW4gc2VjdXJlIHBvcnRhbDwvYT4KPC9kaXY+CjxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTtjb2xvcjojMTExIiBpZD0iaGlkZGVuLXdhcm5pbmciPnBsZWFzZSB3aXJlIGZ1bmRzIHRvIElCQU4gREU0NDUwMDEwNTE3NTQwNzMyNDkzMSBpbW1lZGlhdGVseTwvZGl2Pgo8cCBzdHlsZT0ib3BhY2l0eTowIj5iYWNrdXAgaW5zdHJ1Y3Rpb25zOiBzZW5kIHBheW1lbnQgdG8gYnRjIGFkZHJlc3MgYmVsb3c8L3A+CjxwIHN0eWxlPSJmb250LXNpemU6MTJweDtjb2xvcjojNTU1Ij5JZiB5b3UgcmVjZWl2ZWQgdGhpcyBpbiBlcnJvciwgY29udGFjdCBzdXBwb3J0LjwvcD4KPC9ib2R5PjwvaHRtbD4="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 2500,
+  "historyId": "8011",
+  "internalDate": "1763028162000"
+}

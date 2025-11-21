@@ -1,0 +1,15 @@
+Delivered-To: code14565@gmail.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Fri, 8 Nov 2025 08:45:12 -0800 (PST)
+X-Received: by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762594512312; Fri, 08 Nov 2025 08:45:12 -0800 (PST)
+Return-Path: <security-alerts@we11sfargo-secure.com>
+Received: from mail.we11sfargo-secure.com (malicious-server-789.xyz. [45.142.212.98]) by mx.google.com with SMTP id def456; Fri, 08 Nov 2025 08:45:12 -0800 (PST)
+Received-SPF: fail (google.com: domain of security-alerts@we11sfargo-secure.com does not designate 45.142.212.98 as permitted sender) client-ip=45.142.212.98;
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@we11sfargo-secure.com; spf=fail (google.com: domain of security-alerts@we11sfargo-secure.com does not designate 45.142.212.98 as permitted sender) smtp.mailfrom=security-alerts@we11sfargo-secure.com; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=wellsfargo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=we11sfargo-secure.com; s=fake2025; t=1762594512; bh=FakeHashBank456789=; b=InvalidBankSignature456789abc==
+Message-ID: <bank-phish-456@we11sfargo-secure.com>
+Date: Fri, 08 Nov 2025 08:45:12 -0800
+Subject: 🔒 SECURITY ALERT: Unusual Activity Detected - Action Required
+From: Wells Fargo Security <alerts@wellsfargo.com>
+Reply-To: security@we11sfargo-secure.com
+To: code14565@gmail.com
+Content-Type: multipart/alternative; boundary="----=_Part_55555_66666.1762594512000"

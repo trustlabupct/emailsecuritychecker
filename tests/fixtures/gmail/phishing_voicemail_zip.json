@@ -1,0 +1,131 @@
+{
+  "id": "phishing_014_voicemail_zip",
+  "threadId": "phishing_014_voicemail_zip",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "You received a secure voicemail (00:32). Download Voice_Message.zip to listen...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "user@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:6420:10a8:b0:1a2:a1a5:36a5 with SMTP id qa45csp998877rdb; Mon, 17 Nov 2025 11:05:22 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<notifications@securevoice-mail.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from securevoice-mail.com (mail.securevoice-mail.com. [103.58.65.44]) by mx.google.com with ESMTPS id x7-20020a5d44d7000000b002d290e973d8si1422455qke.431.2025.11.17.11.05.21 for <user@example.com>; Mon, 17 Nov 2025 11:05:22 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (signature missing) header.i=@securevoice-mail.com; spf=fail (google.com: domain of notifications@securevoice-mail.com does not designate 103.58.65.44 as permitted sender) smtp.mailfrom=notifications@securevoice-mail.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=office.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251117110521.667788@securevoice-mail.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Mon, 17 Nov 2025 11:05:21 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Encrypted Voicemail (00:32)"
+      },
+      {
+        "name": "From",
+        "value": "Microsoft Voicemail <voicemail@office.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "multipart/alternative",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0
+        },
+        "parts": [
+          {
+            "partId": "0.0",
+            "mimeType": "text/plain",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/plain; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 160,
+              "data": "WW91IHJlY2VpdmVkIGEgc2VjdXJlIHZvaWNlbWFpbCAoMDA6MzIpLiBEb3dubG9hZCBWb2ljZV9NZXNzYWdlLnppcCB0byBsaXN0ZW4uIFNlY3VyZVZvaWNlIENsb3VkIFBCWA"
+            }
+          },
+          {
+            "partId": "0.1",
+            "mimeType": "text/html",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 340,
+              "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9J2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWYnPjxwPllvdSByZWNlaXZlZCBhIG5ldyB2b2ljZW1haWwgKDAwOjMyKS4gVGhlIG1lc3NhZ2UgaXMgZW5jcnlwdGVkLjwvcD48cD5Eb3dubG9hZCBhbmQgb3BlbiB0aGUgYXR0YWNobWVudCA8c3Ryb25nPlZvaWNlX01lc3NhZ2UuemlwPC9zdHJvbmc-IHRvIGxpc3Rlbi48L3A-PHA-c3R5bGU9J2NvbG9yOiM5Y2EzYWY7Zm9udC1zaXplOjEycHgnPlNlY3VyZVZvaWNlIENsb3VkIFBCWDwvcD48L2JvZHk-PC9odG1sPg"
+            }
+          }
+        ]
+      },
+      {
+        "partId": "1",
+        "mimeType": "application/zip",
+        "filename": "Voice_Message.zip",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/zip; name=Voice_Message.zip"
+          },
+          {
+            "name": "Content-Disposition",
+            "value": "attachment; filename=Voice_Message.zip"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 2048,
+          "data": "UEsDBGZha2Utemlw"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5500,
+  "historyId": "9900112233"
+}

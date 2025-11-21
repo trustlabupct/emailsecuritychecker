@@ -1,0 +1,12 @@
+Delivered-To: ap@example.com
+Received: by 2002:a05:5020:14a8:b0:1a2:a1a5:36a5 with SMTP id oa45csp556677rdb; Fri, 14 Nov 2025 09:32:41 -0800 (PST)
+Return-Path: <marina@acmeparts-pay.com>
+Received: from relay.acmeparts-pay.com (smtp.acmeparts-pay.com. [212.102.43.108]) by mx.google.com with ESMTPS id l4-20020a5d0f34000000b002c571b8e43csi1733345qka.512.2025.11.14.09.32.40 for <ap@example.com>; Fri, 14 Nov 2025 09:32:41 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (body hash mismatch) header.i=@acmeparts-pay.com; spf=fail (google.com: domain of marina@acmeparts-pay.com does not designate 212.102.43.108 as permitted sender) smtp.mailfrom=marina@acmeparts-pay.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=acmeparts.co
+Message-ID: <20251114093240.556677@acmeparts-pay.com>
+Date: Fri, 14 Nov 2025 09:32:40 -0800
+Subject: Re: Outstanding invoice 90877
+From: Marina Alvarez <marina@acmeparts.co>
+Reply-To: Marina Alvarez <marina@acmeparts-pay.com>
+In-Reply-To: <20251113160322.GF90877@acmeparts.co>
+References: <20251113160322.GF90877@acmeparts.co>

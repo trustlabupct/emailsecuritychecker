@@ -1,0 +1,8 @@
+Email ID: phishing_014_voicemail_zip
+Subject: Encrypted Voicemail (00:32)
+From: Microsoft Voicemail <voicemail@office.com>
+To: 
+Date: Mon, 17 Nov 2025 11:05:21 -0800
+
+================================================================================
+

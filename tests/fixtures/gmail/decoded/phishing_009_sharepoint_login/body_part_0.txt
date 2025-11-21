@@ -1,0 +1,7 @@
+A new SharePoint document requires your sign-in.
+
+Sender: Contoso Logistics
+File: FY25 Master Contract.pdf
+
+Access will expire in 6 hours.
+https://contoso-files.sharepoint-access.com/secure-login

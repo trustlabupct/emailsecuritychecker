@@ -1,0 +1,8 @@
+Email ID: phishing_007_qr_payment
+Subject: Invoice #784512 Pending - Scan to Pay
+From: Billing Operations <billing@accounting-suite.com>
+To: 
+Date: Mon, 10 Nov 2025 07:32:18 -0800
+
+================================================================================
+

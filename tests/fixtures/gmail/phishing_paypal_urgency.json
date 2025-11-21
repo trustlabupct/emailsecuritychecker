@@ -1,0 +1,123 @@
+{
+  "id": "phishing_001_paypal",
+  "threadId": "phishing_001_paypal",
+  "labelIds": [
+    "UNREAD",
+    "IMPORTANT",
+    "INBOX"
+  ],
+  "snippet": "URGENT: Your PayPal account has been limited. Immediate action required to restore access. Click here to verify your information within 24 hours or your account will be permanently suspended.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "code14565@gmail.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Thu, 7 Nov 2025 09:15:32 -0800 (PST)"
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762510532312; Thu, 07 Nov 2025 09:15:32 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<security-alert@paypa1-secure.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail-sender-suspicious.example.com (suspicious-server.xyz. [185.234.219.45]) by mx.google.com with SMTP id xyz123; Thu, 07 Nov 2025 09:15:32 -0800 (PST)"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "fail (google.com: domain of security-alert@paypa1-secure.com does not designate 185.234.219.45 as permitted sender) client-ip=185.234.219.45;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail reason=\"signature verification failed\" header.i=@paypa1-secure.com; spf=fail (google.com: domain of security-alert@paypa1-secure.com does not designate 185.234.219.45 as permitted sender) smtp.mailfrom=security-alert@paypa1-secure.com; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=paypal.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=paypa1-secure.com; s=fake2025; t=1762510532; bh=InvalidHashValue123456789=; b=FakeSignature123456789abcdef=="
+      },
+      {
+        "name": "Message-ID",
+        "value": "<phishing123456@paypa1-secure.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Thu, 07 Nov 2025 09:15:32 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "🚨 URGENT: Your PayPal Account Has Been Limited - Action Required"
+      },
+      {
+        "name": "From",
+        "value": "PayPal Security <service@paypal.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "support@paypa1-secure.com"
+      },
+      {
+        "name": "To",
+        "value": "code14565@gmail.com"
+      },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"----=_Part_12345_67890.1762510532000\""
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 856,
+          "data": "VVJHRU5UIFNlY3VyaXR5IEFsZXJ0CgpEZWFyIFBheVBhbCBDdXN0b21lciwKCldlIGhhdmUgZGV0ZWN0ZWQgdW51c3VhbCBhY3Rpdml0eSBvbiB5b3VyIGFjY291bnQuIEZvciBzZWN1cml0eSByZWFzb25zLCB3ZSBoYXZlIHRlbXBvcmFyaWx5IGxpbWl0ZWQgeW91ciBhY2NvdW50IGFjY2Vzcy4KClRvIHJlc3RvcmUgZnVsbCBhY2Nlc3MsIHBsZWFzZSB2ZXJpZnkgeW91ciBpZGVudGl0eSBpbW1lZGlhdGVseToKCkNsaWNrIGhlcmU6IGh0dHA6Ly9wYXlwYWwtdmVyaWZ5LnN1c3BpY2lvdXMtc2l0ZS5jb20vdmVyaWZ5P2lkPTEyMzQ1CgpJRiBZT1UgRE8gTk9UIFZFUklGWSBXSVRISU4gMjQgSE9VUlMsIFlPVVIgQUNDT1VOVCBXSUxMIEJFIFBFUk1BTkVOVExZIFNVU1BFTkRFRC4KClRyYW5zYWN0aW9ucyBhZmZlY3RlZDoKLSBVbmF1dGhvcml6ZWQgbG9naW4gYXR0ZW1wdCBmcm9tIENoaW5hCi0gVW51c3VhbCBwdXJjaGFzZSBvZiAkMSw0OTkuOTkKLSBNdWx0aXBsZSBmYWlsZWQgcGFzc3dvcmQgYXR0ZW1wdHMKClNpbmNlcmVseSwKUGF5UGFsIFNlY3VyaXR5IFRlYW0KCkNvcHlyaWdodCDCqSAyMDI1IFBheVBhbCwgSW5jLiBBbGwgcmlnaHRzIHJlc2VydmVkLg=="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 3245,
+          "data": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KPHRpdGxlPlBheVBhbCBTZWN1cml0eSBBbGVydDwvdGl0bGU+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPC9oZWFkPgo8Ym9keSBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBtYXJnaW46IDA7IHBhZGRpbmc6IDIwcHg7IGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7Ij4KPGRpdiBzdHlsZT0ibWF4LXdpZHRoOiA2MDBweDsgbWFyZ2luOiAwIGF1dG87IGJhY2tncm91bmQ6IHdoaXRlOyBib3JkZXI6IDFweCBzb2xpZCAjZGRkOyI+CiAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZDogIzAwM2U4MjsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAyMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij4KICAgIDxoMSBzdHlsZT0ibWFyZ2luOiAwOyBmb250LXNpemU6IDI0cHg7Ij7wn5qoIFVSR0VOVCBTZWN1cml0eSBBbGVydDwvaDE+CiAgPC9kaXY+CiAgPGRpdiBzdHlsZT0icGFkZGluZzogMzBweCAyMHB4OyI+CiAgICA8cCBzdHlsZT0iZm9udC1zaXplOiAxNnB4OyBsaW5lLWhlaWdodDogMS41OyI+RGVhciBQYXlQYWwgQ3VzdG9tZXIsPC9wPgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsgbGluZS1oZWlnaHQ6IDEuNTsgY29sb3I6ICNkOTUzNDY7IGZvbnQtd2VpZ2h0OiBib2xkOyI+V2UgaGF2ZSBkZXRlY3RlZCB1bnVzdWFsIGFjdGl2aXR5IG9uIHlvdXIgYWNjb3VudC48L3A+CiAgICA8cCBzdHlsZT0iZm9udC1zaXplOiAxNnB4OyBsaW5lLWhlaWdodDogMS41OyI+Rm9yIHlvdXIgcHJvdGVjdGlvbiwgd2UgaGF2ZSB0ZW1wb3JhcmlseSA8c3Ryb25nPmxpbWl0ZWQgeW91ciBhY2NvdW50IGFjY2Vzczwvc3Ryb25nPi4gVG8gcmVzdG9yZSBmdWxsIGFjY2VzcywgcGxlYXNlIHZlcmlmeSB5b3VyIGlkZW50aXR5IGltbWVkaWF0ZWx5LjwvcD4KICAgIDxkaXYgc3R5bGU9ImJhY2tncm91bmQ6ICNmZmYzY2Q7IGJvcmRlci1sZWZ0OiA0cHggc29saWQgI2ZmYzEwNzsgcGFkZGluZzogMTVweDsgbWFyZ2luOiAyMHB4IDA7Ij4KICAgICAgPHAgc3R5bGU9Im1hcmdpbjogMDsgZm9udC13ZWlnaHQ6IGJvbGQ7Ij5UcmFuc2FjdGlvbnMgZmxhZ2dlZCBmb3IgcmV2aWV3OjwvcD4KICAgICAgPHVsIHN0eWxlPSJtYXJnaW46IDEwcHggMDsgcGFkZGluZy1sZWZ0OiAyMHB4OyI+CiAgICAgICAgPGxpPlVuYXV0aG9yaXplZCBsb2dpbiBhdHRlbXB0IGZyb20gPHN0cm9uZz5DaGluYTwvc3Ryb25nPjwvbGk+CiAgICAgICAgPGxpPlVudXN1YWwgcHVyY2hhc2Ugb2YgPHN0cm9uZz4kMSw0OTkuOTk8L3N0cm9uZz48L2xpPgogICAgICAgIDxsaT5NdWx0aXBsZSBmYWlsZWQgcGFzc3dvcmQgYXR0ZW1wdHM8L2xpPgogICAgICA8L3VsPgogICAgPC9kaXY+CiAgICA8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbjogMzBweCAwOyI+CiAgICAgIDxhIGhyZWY9Imh0dHA6Ly9wYXlwYWwtdmVyaWZ5LnN1c3BpY2lvdXMtc2l0ZS5jb20vdmVyaWZ5P2lkPTEyMzQ1IiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBiYWNrZ3JvdW5kOiAjMDA5Y2RlOyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDE1cHggNDBweDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBib3JkZXItcmFkaXVzOiA1cHg7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7Ij5WZXJpZnkgWW91ciBBY2NvdW50IE5vdzwvYT4KICAgIDwvZGl2PgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICNkOTUzNDY7IGZvbnQtd2VpZ2h0OiBib2xkOyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij7imqAgV0FSTklORzogSWYgeW91IGRvIG5vdCB2ZXJpZnkgd2l0aGluIDI0IGhvdXJzLCB5b3VyIGFjY291bnQgd2lsbCBiZSBwZXJtYW5lbnRseSBzdXNwZW5kZWQuPC9wPgogICAgPGhyIHN0eWxlPSJib3JkZXI6IG5vbmU7IGJvcmRlci10b3A6IDFweCBzb2xpZCAjZWVlOyBtYXJnaW46IDMwcHggMDsiPgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICM2NjY7Ij5TaW5jZXJlbHksPC9wPgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICM2NjY7Ij5QYXlQYWwgU2VjdXJpdHkgVGVhbTwvcD4KICA8L2Rpdj4KICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kOiAjZjRmNGY0OyBwYWRkaW5nOiAxNXB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtc2l6ZTogMTJweDsgY29sb3I6ICM2NjY7Ij4KICAgIDxwIHN0eWxlPSJtYXJnaW46IDVweCAwOyI+Q29weXJpZ2h0IMKpIDIwMjUgUGF5UGFsLCBJbmMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuPC9wPgogICAgPHAgc3R5bGU9Im1hcmdpbjogNXB4IDA7Ij5QYXlQYWwgSW5jLiwgMjIxMSBOb3J0aCBGaXJzdCBTdHJlZXQsIFNhbiBKb3NlLCBDQSA5NTEzMTwvcD4KICA8L2Rpdj4KPC9kaXY+CjwvYm9keT4KPC9odG1sPg=="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 4567,
+  "historyId": "7001",
+  "internalDate": "1762510532000"
+}

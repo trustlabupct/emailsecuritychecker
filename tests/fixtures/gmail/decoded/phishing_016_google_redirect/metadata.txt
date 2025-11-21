@@ -1,0 +1,8 @@
+Email ID: phishing_016_google_redirect
+Subject: Document shared with you: "Q4 Financial Projections"
+From: Jane Doe (Google Docs) <docs-noreply@google.com>
+To: user@example.com
+Date: Tue, 18 Nov 2025 10:00:00 -0800
+
+================================================================================
+

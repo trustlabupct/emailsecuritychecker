@@ -1,0 +1,33 @@
+DHL Delivery Notification
+
+Dear Customer,
+
+We attempted to deliver your parcel on November 10, 2025 at 8:30 AM, but no one was available at the delivery address.
+
+Package Details:
+- Tracking Number: DHL-2025-9847563
+- Shipment Weight: 2.5 kg
+- Delivery Attempt: November 10, 2025 at 8:30 AM
+- ReaYn: No one available to receive package
+- Next Attempt: Pending your confirmation
+
+IMPORTANT: To avoid your package being returned to the sender, please confirm your delivery address and reschedule within 48 hours.
+
+To reschedule delivery:
+1. Click the link below
+2. Verify your delivery address
+3. Select a new delivery date and time
+4. Pay the redelivery fee of $3.99
+
+Reschedule Delivery Link:
+http://dhl-parcel-tracking-reschedule.suspicious-domain.com/track?id=9847563&code=XYZ789
+
+If you do not take action within 48 hours, your package will be returned to the sender and you will not receive a refund for shipping costs.
+
+NOTE: This is an automated notification. Please do not reply to this email. For assistance, visit our website or contact customer service.
+
+Thank you for choosing DHL Express.
+
+DHL Express
+Document and Package Delivery
+© 2025 DGL

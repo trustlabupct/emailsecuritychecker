@@ -1,0 +1,21 @@
+URGENT Security Alert
+
+Dear PayPal Customer,
+
+We have detected unusual activity on your account. For security reasons, we have temporarily limited your account access.
+
+To restore full access, please verify your identity immediately:
+
+Click here: http://paypal-verify.suspicious-site.com/verify?id=12345
+
+IF YOU DO NOT VERIFY WITHIN 24 HOURS, YOUR ACCOUNT WILL BE PERMANENTLY SUSPENDED.
+
+Transactions affected:
+- Unauthorized login attempt from China
+- Unusual purchase of $1,499.99
+- Multiple failed password attempts
+
+Sincerely,
+PayPal Security Team
+
+Copyright © 2025 PayPal, Inc. All rights reserved.

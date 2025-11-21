@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" fill="white"/>
+  <text x="60.0" y="28.0" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">
+    <tspan fill="#003087">Pay</tspan>
+    <tspan fill="#009cde">Pal</tspan>
+  </text>
+</svg>

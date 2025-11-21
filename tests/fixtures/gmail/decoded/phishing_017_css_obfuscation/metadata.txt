@@ -1,0 +1,8 @@
+Email ID: phishing_017_css_obfuscation
+Subject: You have received a secure document
+From: Contoso Docs <secure@contoso.com>
+To: user@example.com
+Date: Wed, 19 Nov 2025 11:20:00 -0800
+
+================================================================================
+

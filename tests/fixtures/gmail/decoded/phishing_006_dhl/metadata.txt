@@ -1,0 +1,8 @@
+Email ID: phishing_006_dhl
+Subject: Delivery Attempt Failed - Parcel #DHL-2025-9847563 Awaiting Action
+From: DHL Express <noreply@dhl.com>
+To: code14565@gmail.com
+Date: Sun, 10 Nov 2025 09:15:45 -0800
+
+================================================================================
+

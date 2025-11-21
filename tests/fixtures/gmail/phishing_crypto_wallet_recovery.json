@@ -1,0 +1,102 @@
+{
+  "id": "phishing_011_crypto_wallet",
+  "threadId": "phishing_011_crypto_wallet",
+  "labelIds": [
+    "UNREAD",
+    "CATEGORY_UPDATES",
+    "INBOX"
+  ],
+  "snippet": "Hi Trader, Your Ledger wallet recovery window is closing. Validate your seed phrase to avoid irreversible loss of funds...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "trader@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:6a20:12a8:b0:1a2:a1a5:36a5 with SMTP id pv17csp445566rdb; Fri, 14 Nov 2025 02:14:58 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<alerts@ledger-restore.io>"
+      },
+      {
+        "name": "Received",
+        "value": "from ledger-restore.io (restore.ledger-restore.io. [95.214.27.66]) by mx.google.com with ESMTPS id r12-20020a5d1f56000000b002c363c6f664si1738494qke.145.2025.11.14.02.14.57 for <trader@example.com>; Fri, 14 Nov 2025 02:14:58 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (no signature) header.i=@ledger-restore.io; spf=fail (google.com: domain of alerts@ledger-restore.io does not designate 95.214.27.66 as permitted sender) smtp.mailfrom=alerts@ledger-restore.io; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=ledger.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251114021457.12345@ledger-restore.io>"
+      },
+      {
+        "name": "Date",
+        "value": "Fri, 14 Nov 2025 02:14:57 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Ledger Recovery Protocol Triggered"
+      },
+      {
+        "name": "From",
+        "value": "Ledger Hardware Support <support@ledger.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "Ledger Support <alerts@ledger-restore.io>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 296,
+          "data": "SGkgVHJhZGVyLAoKWW91ciBMZWRnZXIgd2FsbGV0IHJlY292ZXJ5IHdpbmRvdyBpcyBjbG9zaW5nLiBWYWxpZGF0ZSB5b3VyIHNlZWQgcGhyYXNlIHRvIGF2b2lkIGlycmV2ZXJzaWJsZSBsb3NzIG9mIGZ1bmRzLgoKQWNjZXNzIHRoZSBzZWN1cmVkIHJlY292ZXJ5IGZvcm06Cmh0dHBzOi8vbGVkZ2VyLXJlc3RvcmUuaW8vYWNjb3VudC92ZXJpZnkKClRoaXMgbGluayByZW1haW5zIHZhbGlkIGZvciAzMCBtaW51dGVzLgpMZWRnZXIgSGFyZHdhcmUgU3VwcG9ydA"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 512,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OlZlcmRhbmEsc2Fucy1zZXJpZjtiYWNrZ3JvdW5kOiMwNzExMWY7Y29sb3I6I2UwZThmZjtwYWRkaW5nOjI0cHgiPjxoMiBzdHlsZT0iY29sb3I6IzViZTdmZiI-SW1tZWRpYXRlIFNlZWQgUGhyYXNlIFZhbGlkYXRpb24gUmVxdWlyZWQ8L2gyPjxwPllvdXIgTGVkZ2VyIGhhcmR3YXJlIHdhbGxldCB0cmlnZ2VyZWQgYW4gYXV0b21hdGljIHJlY292ZXJ5IHByb3RvY29sLiBWYWxpZGF0ZSB5b3VyIDI0LXdvcmQgcGhyYXNlIHdpdGhpbiA8c3Ryb25nPjMwIG1pbnV0ZXM8L3N0cm9uZz4gdG8gYXZvaWQgcGVybWFuZW50IGFzc2V0IGxvc3MuPC9wPjxwPjxhIGhyZWY9Imh0dHBzOi8vbGVkZ2VyLXJlc3RvcmUuaW8vYWNjb3VudC92ZXJpZnkiIHN0eWxlPSJiYWNrZ3JvdW5kOiM1YmU3ZmY7Y29sb3I6IzA0MTAyNTtwYWRkaW5nOjEycHggMThweDtib3JkZXItcmFkaXVzOjZweDt0ZXh0LWRlY29yYXRpb246bm9uZSI-VmFsaWRhdGUgTm93PC9hPjwvcD48cCBzdHlsZT0ibWFyZ2luLXRvcDozMnB4O2ZvbnQtc2l6ZToxM3B4O2NvbG9yOiM5ZmI1ZmYiPkxlZGdlciBTZWN1cml0eSBEZXNrPC9wPjwvYm9keT48L2h0bWw-"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 4864,
+  "historyId": "6677889900"
+}

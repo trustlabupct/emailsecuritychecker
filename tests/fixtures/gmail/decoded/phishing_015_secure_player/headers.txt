@@ -1,0 +1,9 @@
+Delivered-To: user@example.com
+Received: by 2002:a05:4e20:18a8:b0:1a2:a1a5:36a5 with SMTP id ls10csp334455rdb; Mon, 17 Nov 2025 12:41:59 -0800 (PST)
+Return-Path: <voicemail@ms365-support.com>
+Received: from ms365-support.com (mailer.ms365-support.com. [86.104.14.201]) by mx.google.com with ESMTPS id g12-20020a5d33a2000000b002e2a84390f4si1827363qka.312.2025.11.17.12.41.58 for <user@example.com>; Mon, 17 Nov 2025 12:41:59 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (no key) header.i=@ms365-support.com; spf=fail (google.com: domain of voicemail@ms365-support.com does not designate 86.104.14.201 as permitted sender) smtp.mailfrom=voicemail@ms365-support.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=microsoft.com
+Message-ID: <20251117124158.335577@ms365-support.com>
+Date: Mon, 17 Nov 2025 12:41:58 -0800
+Subject: Voicemail playback requires secure update
+From: Microsoft Voicemail <voicemail@microsoft.com>

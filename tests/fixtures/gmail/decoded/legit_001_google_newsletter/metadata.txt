@@ -1,0 +1,8 @@
+Email ID: legit_001_google_newsletter
+Subject: Welcome to Google Developer Program
+From: Google Developer Program <developers-noreply@google.com>
+To: developer@example.com
+Date: Thu, 06 Nov 2025 09:05:12 -0800
+
+================================================================================
+

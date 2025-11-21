@@ -1,0 +1,97 @@
+{
+  "id": "phishing_015_secure_player",
+  "threadId": "phishing_015_secure_player",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "Hi there, Your Microsoft 365 voicemail gateway recorded a new message but the player could not decrypt it...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "user@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:4e20:18a8:b0:1a2:a1a5:36a5 with SMTP id ls10csp334455rdb; Mon, 17 Nov 2025 12:41:59 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<voicemail@ms365-support.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from ms365-support.com (mailer.ms365-support.com. [86.104.14.201]) by mx.google.com with ESMTPS id g12-20020a5d33a2000000b002e2a84390f4si1827363qka.312.2025.11.17.12.41.58 for <user@example.com>; Mon, 17 Nov 2025 12:41:59 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (no key) header.i=@ms365-support.com; spf=fail (google.com: domain of voicemail@ms365-support.com does not designate 86.104.14.201 as permitted sender) smtp.mailfrom=voicemail@ms365-support.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=microsoft.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251117124158.335577@ms365-support.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Mon, 17 Nov 2025 12:41:58 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Voicemail playback requires secure update"
+      },
+      {
+        "name": "From",
+        "value": "Microsoft Voicemail <voicemail@microsoft.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 208,
+          "data": "SGkgdGhlcmUsCgpZb3VyIE1pY3Jvc29mdCAzNjUgdm9pY2VtYWlsIHN5c3RlbSBxdWV1ZWQgYSBuZXcgbWVzc2FnZSBidXQgZW5jcnlwdGlvbiBrZXlzIGFyZSBvdXRkYXRlZC4gRG93bmxvYWQgdGhlIHNlY3VyZSBwbGF5ZXIgdG8gbGlzdGVuLgoKaHR0cHM6Ly9zaG9ydC5zZi9zMzItUEJYCgpNZXNzYWdlIGV4cGlyZXMgaW4gMiBob3Vycy4"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 420,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9XCJmb250LWZhbWlseSOnU2Vnb2UgVUknLHNhbnMtc2VyaWY7Y29sb3I6IzFhMWExYVwiPjxwPkhpIHRoZXJlLDwvcD48cD5Zb3VyIE1pY3Jvc29mdCAzNjUgdm9pY2VtYWlsIGdhdGV3YXkgcmVjb3JkZWQgYSBuZXcgbWVzc2FnZSBidXQgdGhlIHBsYXllciBjb3VsZCBub3QgZGVjcnlwdCBpdC4gRG93bmxvYWQgdGhlIHNlY3VyZSBwbGF5ZXIgdG8gcmV2aWV3IGJlZm9yZSBpdCBleHBpcmVzLjwvcD48cD48YSBocmVmPVwiaHR0cHM6Ly9zaG9ydC5zZi9zMzItUEJYXCI-Qm93bmxvYWQgTWljcm9zb2Z0IFNlY3VyZSBQbGF5ZXI8L2E-PC9wPjxwIHN0eWxlPVwiZm9udC1zaXplOjEycHg7Y29sb3I6IzZiNzI4MFwiPk1lc3NhZ2UgZXhwaXJlcyBpbiAyIGhvdXJzLjwvcD48L2JvZHk-PC9odG1sPg"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 3800,
+  "historyId": "1122334455"
+}

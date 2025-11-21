@@ -1,0 +1,15 @@
+Hi there,
+
+Our IT team is currently rolling out multi-factor authentication (MFA) to all departments as part of our ongoing security improvements for the fourth quarter.
+
+To ensure uninterrupted access to your account, we need you to verify your current credentials and enroll in our new MFA system. This is a routine procedure that should take less than 5 minutes.
+
+Please complete the verification at your convenience:
+https://sso-verify.techcorp-services.com/enroll/mfa?id=employee
+
+If you have any questions or need assistance, feel free to reach out to our support team.
+
+Best regards,
+IT Support Team
+TechCorp Services
+it.support@techcorp-services.com

@@ -1,0 +1,15 @@
+Delivered-To: code14565@gmail.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Fri, 8 Nov 2025 16:20:30 -0800 (PST)
+X-Received: by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762621230312; Fri, 08 Nov 2025 16:20:30 -0800 (PST)
+Return-Path: <no-reply@g00gle-security-team.net>
+Received: from mail.g00gle-security-team.net (phishing-host-999.cn. [58.218.199.147]) by mx.google.com with SMTP id ghi789; Fri, 08 Nov 2025 16:20:30 -0800 (PST)
+Received-SPF: fail (google.com: domain of no-reply@g00gle-security-team.net does not designate 58.218.199.147 as permitted sender) client-ip=58.218.199.147;
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@g00gle-security-team.net; spf=fail (google.com: domain of no-reply@g00gle-security-team.net does not designate 58.218.199.147 as permitted sender) smtp.mailfrom=no-reply@g00gle-security-team.net; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=g00gle-security-team.net; s=fake2025; t=1762621230; bh=BadHashGoogle999=; b=FakeGoogleSig999xyz==
+Message-ID: <google-phish-999@g00gle-security-team.net>
+Date: Fri, 08 Nov 2025 16:20:30 -0800
+Subject: Important Security Alert for Your Google Account !!!
+From: Google Security Team <noreply@google.com>
+Reply-To: security-support@g00gle-security-team.net
+To: code14565@gmail.com
+Content-Type: multipart/alternative; boundary="----=_Part_77777_88888.1762621230000"

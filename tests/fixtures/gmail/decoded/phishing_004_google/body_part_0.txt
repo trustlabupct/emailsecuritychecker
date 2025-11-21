@@ -1,0 +1,28 @@
+Important Security Alert
+
+Dear user,
+
+Your Google account have been compromise by unknown persons from foreign country. We detected suspicious activity on your account and need you confirm your identity immediate.
+
+Suspicious activities detected:
+- Login attempt from China at 3:30 AM
+- Password change attempted multiple times
+- Unusual email sending activity
+- Access from new device not recognized
+
+TO PROTECT YOUR ACCOUNT:
+Please click on the link bellow to verify account and confirm is you:
+
+http://google-account-verify-security.suspicious-domain.cn/login?id=999
+
+IF YOU DO NOT VERIFY IN 24 HOURS, YOUR ACCOUNT WILL BE SUSPENDED PERMANENT UNT ALSO ALL DOCUMENTS AND EMARLSS WILL BE DELETED.
+
+Thank you for your cooperation.
+
+Regards,
+Google Security Team
+Google LLC
+1600 Amphitheatre Parkway
+Mountain View, CA 94043
+
+NOTE: This email was send automatically. Please do not respond to this email.

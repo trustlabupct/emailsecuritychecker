@@ -1,0 +1,701 @@
+{
+  "testSuite": {
+    "name": "TrustEmail Gmail Fixture Set",
+    "version": "1.2.0",
+    "created": "2025-11-15",
+    "description": "Curated Gmail API-like messages for exercising TrustEmail phishing detection and false-positive resilience",
+    "totalTestCases": 17
+  },
+  "testCases": [
+    {
+      "id": "phishing_001_paypal",
+      "filename": "phishing_paypal_urgency.json",
+      "name": "PayPal Urgency Scam",
+      "category": "Financial Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Urgency tactics",
+        "Typosquatting (paypa1-secure.com)",
+        "Domain mismatch (From vs Reply-To)",
+        "Failed SPF/DKIM/DMARC",
+        "Generic greeting",
+        "Malicious link"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "PayPal",
+      "keyFeatures": {
+        "suspiciousDomain": "paypa1-secure.com",
+        "urgencyDeadline": "24 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false
+      }
+    },
+    {
+      "id": "phishing_002_amazon",
+      "filename": "phishing_amazon_typosquatting.json",
+      "name": "Amazon Typosquatting",
+      "category": "E-commerce Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Typosquatting (arnazon-security.com)",
+        "Urgency (48 hours)",
+        "Failed authentication",
+        "Suspicious IP geolocation",
+        "Account verification scam",
+        "Domain mismatch"
+      ],
+      "expectedIndicators": 5,
+      "targetBrand": "Amazon",
+      "keyFeatures": {
+        "suspiciousDomain": "arnazon-security.com",
+        "urgencyDeadline": "48 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false
+      }
+    },
+    {
+      "id": "phishing_003_bank",
+      "filename": "phishing_bank_credential_harvest.json",
+      "name": "Wells Fargo Credential Harvesting",
+      "category": "Banking Phishing",
+      "riskLevel": "CRITICAL",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Typosquatting (we11sfargo-secure.com)",
+        "Extreme urgency (2 hours)",
+        "Fear tactics (account closure)",
+        "Suspicious geolocation (Russia)",
+        "Credential harvesting form",
+        "ALL CAPS warnings",
+        "Failed authentication"
+      ],
+      "expectedIndicators": 7,
+      "targetBrand": "Wells Fargo",
+      "keyFeatures": {
+        "suspiciousDomain": "we11sfargo-secure.com",
+        "urgencyDeadline": "2 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "suspiciousLocation": "Moscow, Russia"
+      }
+    },
+    {
+      "id": "phishing_004_google",
+      "filename": "phishing_google_poor_grammar.json",
+      "name": "Google Poor Grammar Scam",
+      "category": "Account Compromise",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Poor grammar and spelling",
+        "Typosquatting (g00gle-security-team.net)",
+        "Failed authentication",
+        "Suspicious IP (China)",
+        "Excessive punctuation (!!!)",
+        "Generic greeting",
+        "Broken English"
+      ],
+      "expectedIndicators": 8,
+      "targetBrand": "Google",
+      "keyFeatures": {
+        "suspiciousDomain": "g00gle-security-team.net",
+        "urgencyDeadline": "24 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "poorGrammar": true,
+        "suspiciousLocation": "China"
+      }
+    },
+    {
+      "id": "phishing_005_microsoft",
+      "filename": "phishing_microsoft_attachment.json",
+      "name": "Microsoft Office 365 Malicious Attachment",
+      "category": "Malware Distribution",
+      "riskLevel": "CRITICAL",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Malicious attachment (.exe disguised as .pdf)",
+        "Typosquatting (micros0ft-office365.net)",
+        "Urgency (24 hours)",
+        "Failed authentication",
+        "Double extension trick",
+        "Fear of data loss",
+        "Fake invoice scam"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Microsoft",
+      "keyFeatures": {
+        "suspiciousDomain": "micros0ft-office365.net",
+        "urgencyDeadline": "24 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": true,
+        "maliciousAttachment": {
+          "filename": "Invoice_Nov-2025.pdf.exe",
+          "technique": "Double extension",
+          "fileType": "executable"
+        },
+        "suspiciousLocation": "Russia"
+      }
+    },
+    {
+      "id": "phishing_006_dhl",
+      "filename": "phishing_dhl_shipping_scam.json",
+      "name": "DHL Shipping Notification Scam",
+      "category": "Delivery Scam",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Typosquatting (dh1-express-shipping.com)",
+        "Failed delivery scam",
+        "Urgency (48 hours)",
+        "Fake tracking number",
+        "Redelivery fee scam",
+        "Failed authentication",
+        "Unsolicited package notification"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "DHL",
+      "keyFeatures": {
+        "suspiciousDomain": "dh1-express-shipping.com",
+        "urgencyDeadline": "48 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "scamType": "Fake delivery fee",
+        "fakeTrackingNumber": "DHL-2025-9847563"
+      }
+    },
+    {
+      "id": "phishing_007_qr_payment",
+      "filename": "phishing_qr_payment.json",
+      "name": "QR Payment Invoice Scam",
+      "category": "Invoice Scam",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "QR code payment pressure",
+        "Failed authentication",
+        "Attachment with embedded QR code",
+        "Domain mismatch",
+        "Urgency (12 hours)",
+        "Suspicious links"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Accounting Suite",
+      "keyFeatures": {
+        "suspiciousDomain": "secure-billing.info",
+        "urgencyDeadline": "12 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": true,
+        "qrCodeLink": "https://malicious-qr.example.com/qr.png"
+      }
+    },
+    {
+      "id": "phishing_008_ceo_wire",
+      "filename": "phishing_ceo_wire_transfer.json",
+      "name": "CEO Wire Transfer BEC",
+      "category": "Business Email Compromise",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Executive impersonation",
+        "Urgent wire transfer instructions",
+        "Domain spoofing (gl0bal-industries.com)",
+        "Failed authentication",
+        "Confidential payment request",
+        "Financial pressure"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Global Industries",
+      "keyFeatures": {
+        "suspiciousDomain": "gl0bal-industries.com",
+        "urgencyDeadline": "Same day",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "becStyle": "CEO wire transfer"
+      }
+    },
+    {
+      "id": "phishing_009_sharepoint_login",
+      "filename": "phishing_sharepoint_login.json",
+      "name": "SharePoint Credential Harvest",
+      "category": "Cloud Collaboration Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Fake document share",
+        "Typosquatting (contoso-secure.com)",
+        "Access expiry pressure",
+        "Failed authentication",
+        "Credential collection link",
+        "Brand impersonation"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "SharePoint",
+      "keyFeatures": {
+        "suspiciousDomain": "contoso-secure.com",
+        "urgencyDeadline": "6 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "cloudService": "SharePoint"
+      }
+    },
+    {
+      "id": "phishing_010_security_update",
+      "filename": "phishing_security_update_html.json",
+      "name": "Fake Security Update HTML",
+      "category": "Malware Delivery",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Security alert pretext",
+        "Typosquatting (ms-secure-patch.com)",
+        "Failed authentication",
+        "Attachment delivering credential form",
+        "Tight remediation deadline",
+        "Brand impersonation"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Microsoft",
+      "keyFeatures": {
+        "suspiciousDomain": "ms-secure-patch.com",
+        "urgencyDeadline": "1 hour",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": true,
+        "attachmentType": "html",
+        "attachmentName": "SecurityPatch.html"
+      }
+    },
+    {
+      "id": "phishing_011_crypto_wallet",
+      "filename": "phishing_crypto_wallet_recovery.json",
+      "name": "Ledger Wallet Recovery Scam",
+      "category": "Cryptocurrency Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Seed phrase validation pressure",
+        "Typosquatting (ledger-restore.io)",
+        "Failed authentication",
+        "Short-lived link urgency",
+        "Secure portal impersonation",
+        "Financial asset threat"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Ledger",
+      "keyFeatures": {
+        "suspiciousDomain": "ledger-restore.io",
+        "urgencyDeadline": "30 minutes",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "cryptoFocused": true
+      }
+    },
+    {
+      "id": "phishing_012_vendor_invoice",
+      "filename": "phishing_vendor_invoice_thread.json",
+      "name": "Vendor Invoice Thread Hijack",
+      "category": "Invoice Fraud",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Thread hijacking",
+        "Routing number change",
+        "Failed authentication",
+        "Lookalike reply domain (acmeparts-pay.com)",
+        "Fake remittance attachment",
+        "Shipment release pressure"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Acme Parts",
+      "keyFeatures": {
+        "suspiciousDomain": "acmeparts-pay.com",
+        "urgencyDeadline": "Same day",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": true,
+        "attachmentType": "pdf",
+        "threadHijack": true
+      }
+    },
+    {
+      "id": "phishing_013_compromised_vendor",
+      "filename": "phishing_compromised_vendor.json",
+      "name": "Compromised Vendor Update",
+      "category": "Business Email Compromise",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "medium",
+      "techniques": [
+        "Compromised legitimate account",
+        "Reply-To domain mismatch",
+        "Urgent payment instruction",
+        "IBAN provided in body",
+        "Authentication passes for sender domain"
+      ],
+      "expectedIndicators": 5,
+      "targetBrand": "Acme Parts",
+      "keyFeatures": {
+        "suspiciousDomain": "acmeparts-payments.com",
+        "urgencyDeadline": "Same day",
+        "authenticationFailures": [],
+        "hasAttachment": false,
+        "becStyle": "Compromised vendor"
+      }
+    },
+    {
+      "id": "phishing_014_voicemail_zip",
+      "filename": "phishing_voicemail_zip.json",
+      "name": "Encrypted Voicemail Attachment",
+      "category": "Malware Delivery",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Voicemail lure",
+        "ZIP attachment with executable payload",
+        "Microsoft brand impersonation",
+        "Failed authentication",
+        "Attachment-based malware delivery"
+      ],
+      "expectedIndicators": 6,
+      "targetBrand": "Microsoft",
+      "keyFeatures": {
+        "suspiciousDomain": "securevoice-mail.com",
+        "urgencyDeadline": "Not specified",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": true,
+        "attachmentType": "zip"
+      }
+    },
+    {
+      "id": "phishing_015_secure_player",
+      "filename": "phishing_secure_player_link.json",
+      "name": "Voicemail Secure Player Link",
+      "category": "Credential Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Shortened URL redirect",
+        "Voicemail urgency",
+        "Failed authentication",
+        "Microsoft brand impersonation"
+      ],
+      "expectedIndicators": 5,
+      "targetBrand": "Microsoft",
+      "keyFeatures": {
+        "suspiciousDomain": "ms365-support.com",
+        "urgencyDeadline": "2 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "usesShortLink": true
+      }
+    },
+    {
+      "id": "legit_001_google_newsletter",
+      "filename": "legit_google_newsletter.json",
+      "name": "Google Developer Welcome",
+      "category": "Legitimate Reference",
+      "riskLevel": "LOW",
+      "expectedRiskScore": "low",
+      "techniques": [
+        "Brand-aligned domain",
+        "Authentication passes",
+        "Newsletter layout",
+        "List-Unsubscribe headers"
+      ],
+      "expectedIndicators": 0,
+      "targetBrand": "Google",
+      "keyFeatures": {
+        "suspiciousDomain": null,
+        "urgencyDeadline": null,
+        "authenticationFailures": [],
+        "hasAttachment": false,
+        "legitimate": true
+      }
+    },
+    {
+      "id": "phishing_016_google_redirect",
+      "filename": "phishing_google_apps_script_redirect.json",
+      "name": "Google Docs Redirect Phish",
+      "category": "Cloud Collaboration Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Google Apps Script redirect",
+        "Brand impersonation",
+        "Failed authentication",
+        "Deceptive link"
+      ],
+      "expectedIndicators": 4,
+      "targetBrand": "Google",
+      "keyFeatures": {
+        "suspiciousDomain": "script.google.com",
+        "urgencyDeadline": null,
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "deceptiveLink": "https://script.google.com/macros/s/AKfyciyWmYUm.../exec?redirect=https://malicious-site.com/Google-Docs-Login"
+      }
+    },
+    {
+      "id": "phishing_017_css_obfuscation",
+      "filename": "phishing_css_obfuscation.json",
+      "name": "CSS Obfuscation Phish",
+      "category": "Credential Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "CSS overlay",
+        "Link obfuscation",
+        "Failed authentication"
+      ],
+      "expectedIndicators": 3,
+      "targetBrand": "Contoso",
+      "keyFeatures": {
+        "suspiciousDomain": "malicious-phishing-site.com",
+        "urgencyDeadline": "24 hours",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "obfuscationTechnique": "CSS Overlay"
+      }
+    },
+    {
+      "id": "phishing_016_subtle_credential_harvest",
+      "filename": "phishing_016_subtle_credential_harvest.json",
+      "name": "Subtle MFA Enrollment Phishing",
+      "category": "Credential Phishing",
+      "riskLevel": "MEDIUM",
+      "expectedRiskScore": "medium",
+      "techniques": [
+        "Compromised legitimate account simulation",
+        "Subtle social engineering",
+        "Professional language",
+        "No urgency tactics",
+        "Credential harvesting link"
+      ],
+      "expectedIndicators": 2,
+      "targetBrand": "Generic IT Services",
+      "keyFeatures": {
+        "suspiciousDomain": "sso-verify.techcorp-services.com",
+        "urgencyDeadline": null,
+        "authenticationFailures": [],
+        "hasAttachment": false,
+        "subtlePhishing": true,
+        "passesAuthentication": true,
+        "bypassAttempt": true
+      }
+    },
+    {
+      "id": "phishing_018_calendar_invite",
+      "filename": "phishing_calendar_invite_zoom.json",
+      "name": "Malicious Calendar Invite",
+      "category": "Attachment Phishing",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "ICS attachment",
+        "Typosquatting link",
+        "Brand impersonation"
+      ],
+      "expectedIndicators": 3,
+      "targetBrand": "Zoom",
+      "keyFeatures": {
+        "suspiciousDomain": "z00m.us",
+        "urgencyDeadline": null,
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": true,
+        "attachmentType": "ics"
+      }
+    },
+    {
+      "id": "phishing_019_click_here_dom",
+      "filename": "phishing_click_here_dom_mismatch.json",
+      "name": "Generic CTA Link Hijack",
+      "category": "Invoice Scam",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "\"Click here\" CTA with nested tags",
+        "High-risk .zip TLD destination",
+        "Failed authentication",
+        "Fake billing reminder"
+      ],
+      "expectedIndicators": 4,
+      "targetBrand": "Ledger",
+      "keyFeatures": {
+        "suspiciousDomain": "login-security-alert.zip",
+        "urgencyDeadline": "Immediate",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "domParsingRequired": true
+      }
+    },
+    {
+      "id": "phishing_020_hidden_html",
+      "filename": "phishing_hidden_text_obfuscation.json",
+      "name": "Hidden HTML Instructions",
+      "category": "Wire Transfer Fraud",
+      "riskLevel": "HIGH",
+      "expectedRiskScore": "high",
+      "techniques": [
+        "Hidden text instructions",
+        "Inline CSS cloaking",
+        "Failed authentication",
+        "Embedded IBAN in concealed element"
+      ],
+      "expectedIndicators": 4,
+      "targetBrand": "Ledger",
+      "keyFeatures": {
+        "suspiciousDomain": "secure-ledger.support",
+        "urgencyDeadline": "Same day",
+        "authenticationFailures": [
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "hasAttachment": false,
+        "htmlObfuscation": true
+      }
+    }
+  ],
+  "commonIndicators": {
+    "authenticationFailures": {
+      "description": "Most phishing fixtures intentionally fail SPF, DKIM, and DMARC checks (the compromised-vendor and subtle-credential-harvest samples pass to simulate account takeover scenarios)",
+      "count": 15
+    },
+    "domainMismatch": {
+      "description": "Phishing fixtures exhibit mismatches between From, Reply-To, or Return-Path domains",
+      "count": 16
+    },
+    "typosquatting": {
+      "description": "Most phishing fixtures spoof trusted brands via lookalike domains",
+      "examples": [
+        "paypa1-secure.com",
+        "arnazon-security.com",
+        "we11sfargo-secure.com",
+        "g00gle-security-team.net",
+        "micros0ft-office365.net",
+        "dh1-express-shipping.com",
+        "secure-billing.info",
+        "gl0bal-industries.com",
+        "contoso-secure.com",
+        "ms-secure-patch.com",
+        "ledger-restore.io",
+        "acmeparts-pay.com",
+        "login-security-alert.zip",
+        "secure-ledger.support"
+      ],
+      "count": 14
+    },
+    "urgencyTactics": {
+      "description": "Each phishing mail pressures the user with strict deadlines (2–48 hours)",
+      "deadlines": [
+        "30 minutes",
+        "1 hour",
+        "2 hours",
+        "6 hours",
+        "12 hours",
+        "24 hours",
+        "48 hours",
+        "Same day",
+        "Immediate"
+      ],
+      "count": 16
+    },
+    "legitimateControl": {
+      "description": "One control message validates that the analyzer yields low risk for authentic traffic",
+      "count": 1
+    }
+  },
+  "testingGuidelines": {
+    "minimumDetectionRate": "Each phishing fixture should meet or exceed its expected risk score (high or medium depending on scenario)",
+    "recommendedRiskScores": {
+      "HIGH": ">=8/10",
+      "CRITICAL": ">=9/10",
+      "LOW": "<=3/10"
+    },
+    "expectedBehavior": "Phishing samples should surface high confidence risk with clear factor breakdowns while the legitimate control remains LOW",
+    "falsePositiveTarget": "0%"
+  },
+  "usage": {
+    "loadSingle": "loadFixture('phishing_001_paypal')",
+    "loadAll": "loadAllFixtures()",
+    "runTests": "runFixtureAnalyses().then(printFixtureReport)"
+  },
+  "metadata": {
+    "format": "Gmail API v1 messages.get format=full",
+    "encoding": "Base64URL for MIME part bodies",
+    "safe": true,
+    "notes": "All emails are synthetic; no live data is present."
+  }
+}

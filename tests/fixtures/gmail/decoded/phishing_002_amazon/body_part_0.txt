@@ -1,0 +1,22 @@
+Account Verification Required
+
+Hello,
+
+We have detected unusual activity on your Amazon account. For security reasons, we need you to verify your payment method and account information.
+
+Recent Activity:
+- Login attempt from unrecognized device
+- Multiple failed password attempts
+- Payment method needs updating
+
+To continue using your account, please verify your information here:
+http://amazon-verify-accounts.suspicious-site.com/verify?id=789
+
+If you do not verify within 48 hours, we will be forced to temporarily suspend your account.
+
+Thank you for your immediate attention to this matter.
+
+Sincerely,
+Amazon Account Services
+
+© 2025 Amazon.com, Inc. or its affiliates.

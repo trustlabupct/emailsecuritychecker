@@ -1,0 +1,136 @@
+{
+  "id": "phishing_007_qr_payment",
+  "threadId": "phishing_007_qr_payment",
+  "labelIds": [
+    "UNREAD",
+    "SPAM",
+    "INBOX"
+  ],
+  "snippet": "Pending invoice payment required. Scan the QR code within 12 hours to avoid suspension.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "finance@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Mon, 10 Nov 2025 07:32:18 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<alerts@secure-billing.info>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.secure-billing.info (malicious-host.example. [103.201.48.77]) by mx.google.com with SMTP id z6-20020a5d53b6000000b002d5f7a5b1a2so1562347qka.12.2025.11.10.07.32.17 for <finance@example.com>; Mon, 10 Nov 2025 07:32:18 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (no key for signature) header.i=@secure-billing.info; spf=fail (google.com: domain of alerts@secure-billing.info does not designate 103.201.48.77 as permitted sender) smtp.mailfrom=alerts@secure-billing.info; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=accounting-suite.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<qrpayment123456@secure-billing.info>"
+      },
+      {
+        "name": "Date",
+        "value": "Mon, 10 Nov 2025 07:32:18 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Invoice #784512 Pending - Scan to Pay"
+      },
+      {
+        "name": "From",
+        "value": "Billing Operations <billing@accounting-suite.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "support@secure-billing.info"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "multipart/alternative",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0
+        },
+        "parts": [
+          {
+            "partId": "0.0",
+            "mimeType": "text/plain",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/plain; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 188,
+              "data": "RGVhciBVc2VyLAoKQSBwZW5kaW5nIGludm9pY2UgcmVxdWlyZXMgaW1tZWRpYXRlIHBheW1lbnQuIFNjYW4gdGhlIGF0dGFjaGVkIFFSIGNvZGUgd2l0aGluIDEyIGhvdXJzIHRvIGF2b2lkIGFjY291bnQgc3VzcGVuc2lvbi4KCkJpbGxpbmcgRGVwYXJ0bWVudA"
+            }
+          },
+          {
+            "partId": "0.1",
+            "mimeType": "text/html",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 520,
+              "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9J2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7YmFja2dyb3VuZC1jb2xvcjojZmZmJz48aDI-UGVuZGluZyBJbnZvaWNlIFBheW1lbnQgUmVxdWlyZWQ8L2gyPjxwPllvdXIgYWNjb3VudCBoYXMgYW4gb3V0c3RhbmRpbmcgYmFsYW5jZS4gUGxlYXNlIHNjYW4gdGhlIFFSIGNvZGUgYmVsb3cgd2l0aGluIDxzdHJvbmc-MTIgaG91cnM8L3N0cm9uZz4gdG8ga2VlcCB5b3VyIHNlcnZpY2VzIGFjdGl2ZS48L3A-PHA-PGltZyBhbHQ9J1NjYW4gdG8gcGF5JyBzcmM9J2h0dHBzOi8vbWFsaWNpb3VzLXFyLmV4YW1wbGUuY29tL3FyLnBuZycgc3R5bGU9J3dpZHRoOjE4MHB4O2hlaWdodDoxODBweDtib3JkZXI6NHB4IHNvbGlkICNmNDQzMzY7cGFkZGluZzo4cHgnLz48L3A-PHA-SWYgeW91IGNhbm5vdCBzY2FuIHRoZSBjb2RlLCA8YSBocmVmPSdodHRwOi8vc2VjdXJlLXBheW1lbnRzLmV4YW1wbGUnPmNsaWNrIGhlcmU8L2E-IHRvIGVudGVyIHlvdXIgcGF5bWVudCBkZXRhaWxzIG1hbnVhbGx5LjwvcD48cD5CaWxsaW5nIE9wZXJhdGlvbnM8L3A-PC9ib2R5PjwvaHRtbD4"
+            }
+          }
+        ]
+      },
+      {
+        "partId": "1",
+        "mimeType": "image/png",
+        "filename": "invoice-qr.png",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "image/png; name=invoice-qr.png"
+          },
+          {
+            "name": "Content-ID",
+            "value": "<qr-code>"
+          },
+          {
+            "name": "Content-Disposition",
+            "value": "attachment; filename=invoice-qr.png"
+          }
+        ],
+        "body": {
+          "size": 1024,
+          "attachmentId": "ANGjdJ-qr-attachment"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5632,
+  "historyId": "2233445566"
+}

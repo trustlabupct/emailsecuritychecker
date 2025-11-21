@@ -1,0 +1,10 @@
+Delivered-To: trader@example.com
+Received: by 2002:a05:6a20:12a8:b0:1a2:a1a5:36a5 with SMTP id pv17csp445566rdb; Fri, 14 Nov 2025 02:14:58 -0800 (PST)
+Return-Path: <alerts@ledger-restore.io>
+Received: from ledger-restore.io (restore.ledger-restore.io. [95.214.27.66]) by mx.google.com with ESMTPS id r12-20020a5d1f56000000b002c363c6f664si1738494qke.145.2025.11.14.02.14.57 for <trader@example.com>; Fri, 14 Nov 2025 02:14:58 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (no signature) header.i=@ledger-restore.io; spf=fail (google.com: domain of alerts@ledger-restore.io does not designate 95.214.27.66 as permitted sender) smtp.mailfrom=alerts@ledger-restore.io; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=ledger.com
+Message-ID: <20251114021457.12345@ledger-restore.io>
+Date: Fri, 14 Nov 2025 02:14:57 -0800
+Subject: Ledger Recovery Protocol Triggered
+From: Ledger Hardware Support <support@ledger.com>
+Reply-To: Ledger Support <alerts@ledger-restore.io>

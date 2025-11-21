@@ -1,0 +1,9 @@
+Delivered-To: user@example.com
+Received: by 2002:a05:6420:10a8:b0:1a2:a1a5:36a5 with SMTP id qa45csp998877rdb; Mon, 17 Nov 2025 11:05:22 -0800 (PST)
+Return-Path: <notifications@securevoice-mail.com>
+Received: from securevoice-mail.com (mail.securevoice-mail.com. [103.58.65.44]) by mx.google.com with ESMTPS id x7-20020a5d44d7000000b002d290e973d8si1422455qke.431.2025.11.17.11.05.21 for <user@example.com>; Mon, 17 Nov 2025 11:05:22 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (signature missing) header.i=@securevoice-mail.com; spf=fail (google.com: domain of notifications@securevoice-mail.com does not designate 103.58.65.44 as permitted sender) smtp.mailfrom=notifications@securevoice-mail.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=office.com
+Message-ID: <20251117110521.667788@securevoice-mail.com>
+Date: Mon, 17 Nov 2025 11:05:21 -0800
+Subject: Encrypted Voicemail (00:32)
+From: Microsoft Voicemail <voicemail@office.com>

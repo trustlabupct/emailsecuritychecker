@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" fill="white"/>
+  <text x="10" y="28" font-family="Arial" font-size="28" font-weight="bold">
+    <tspan fill="#4285F4">G</tspan>
+    <tspan fill="#EA4335">o</tspan>
+    <tspan fill="#FBBC05">o</tspan>
+    <tspan fill="#4285F4">g</tspan>
+    <tspan fill="#34A853">l</tspan>
+    <tspan fill="#EA4335">e</tspan>
+  </text>
+</svg>

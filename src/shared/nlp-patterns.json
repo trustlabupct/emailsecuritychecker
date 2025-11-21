@@ -1,0 +1,410 @@
+{
+  "en": {
+    "requestPatterns": {
+      "payment": [
+        "send payment",
+        "wire transfer",
+        "bank transfer",
+        "send money",
+        "pay now",
+        "make payment",
+        "process payment",
+        "payment required",
+        "invoice",
+        "billing",
+        "amount due",
+        "overdue"
+      ],
+      "credentials": [
+        "enter your password",
+        "confirm password",
+        "verify password",
+        "verify your password",
+        "confirm your password",
+        "update your password",
+        "update password",
+        "reset password",
+        "enter username",
+        "login credentials",
+        "account credentials",
+        "sign in",
+        "log in"
+      ],
+      "personal_info": [
+        "provide your",
+        "enter your",
+        "confirm your",
+        "verify your",
+        "update your",
+        "social security",
+        "ssn",
+        "date of birth",
+        "driver's license",
+        "passport",
+        "credit card",
+        "bank account",
+        "routing number"
+      ],
+      "download": [
+        "download attachment",
+        "open attachment",
+        "view document",
+        "download file",
+        "install",
+        "run this",
+        "execute",
+        "enable macros",
+        "enable content"
+      ],
+      "click_link": [
+        "click here",
+        "click the link",
+        "visit this link",
+        "go to",
+        "follow this link",
+        "open this link",
+        "click below",
+        "click to verify",
+        "click to confirm"
+      ],
+      "reply": [
+        "reply immediately",
+        "respond now",
+        "reply with",
+        "send us",
+        "confirm by replying",
+        "email us back"
+      ]
+    },
+    "modalityKeywords": {
+      "must": ["must", "have to", "need to", "required to", "obligated to"],
+      "should": ["should", "ought to", "supposed to"],
+      "command": ["click", "verify", "confirm", "update", "download", "install", "send", "provide", "enter"]
+    }
+  },
+  "es": {
+    "requestPatterns": {
+      "payment": [
+        "enviar pago",
+        "transferencia bancaria",
+        "pago inmediato",
+        "pagar ahora",
+        "realizar pago",
+        "orden de pago",
+        "factura",
+        "facturacion",
+        "monto adeudado",
+        "vencido"
+      ],
+      "credentials": [
+        "ingresa tu contrasena",
+        "verifica tu contrasena",
+        "actualiza tu contrasena",
+        "reinicia tu contrasena",
+        "nombre de usuario",
+        "credenciales",
+        "iniciar sesion",
+        "inicia sesion",
+        "verificar cuenta",
+        "confirmar cuenta"
+      ],
+      "personal_info": [
+        "proporciona tus",
+        "ingresa tus",
+        "confirma tus",
+        "verifica tus",
+        "actualiza tus",
+        "seguro social",
+        "fecha de nacimiento",
+        "licencia de conducir",
+        "pasaporte",
+        "tarjeta de credito",
+        "cuenta bancaria",
+        "numero de ruta"
+      ],
+      "download": [
+        "descarga el adjunto",
+        "abre el adjunto",
+        "descarga archivo",
+        "instala",
+        "ejecuta",
+        "habilita macros",
+        "habilita contenido"
+      ],
+      "click_link": [
+        "haz clic aqui",
+        "clic aqui",
+        "haz click aqui",
+        "visita este enlace",
+        "abre este enlace",
+        "haz clic abajo",
+        "haz clic para verificar",
+        "haz clic para confirmar"
+      ],
+      "reply": [
+        "responde de inmediato",
+        "responde ahora",
+        "responde con",
+        "envianos",
+        "confirma respondiendo",
+        "escribenos de vuelta"
+      ]
+    },
+    "modalityKeywords": {
+      "must": ["debes", "tienes que", "necesitas", "es obligatorio", "requerido"],
+      "should": ["deberias", "se supone que", "conviene que"],
+      "command": ["haz clic", "verifica", "confirma", "actualiza", "descarga", "instala", "envia", "proporciona", "ingresa"]
+    }
+  },
+  "fr": {
+    "requestPatterns": {
+      "payment": [
+        "effectuer le paiement",
+        "virement bancaire",
+        "payer maintenant",
+        "regler la facture",
+        "paiement immediat",
+        "facture",
+        "montant du"
+      ],
+      "credentials": [
+        "saisissez votre mot de passe",
+        "confirmez votre mot de passe",
+        "mettre a jour votre mot de passe",
+        "identifiant",
+        "donnees de connexion",
+        "connectez vous",
+        "verifier le compte"
+      ],
+      "personal_info": [
+        "fournissez vos",
+        "confirmez vos",
+        "verifiez vos",
+        "mettez a jour vos",
+        "securite sociale",
+        "date de naissance",
+        "passeport",
+        "carte de credit",
+        "compte bancaire"
+      ],
+      "download": [
+        "telecharger la piece jointe",
+        "ouvrir la piece jointe",
+        "telechargez le fichier",
+        "installer",
+        "executer",
+        "activer les macros",
+        "activer le contenu"
+      ],
+      "click_link": [
+        "cliquez ici",
+        "cliquez sur le lien",
+        "visitez ce lien",
+        "suivez ce lien",
+        "ouvrir ce lien",
+        "cliquez ci dessous",
+        "cliquez pour verifier",
+        "cliquez pour confirmer"
+      ],
+      "reply": [
+        "repondez immediatement",
+        "repondez maintenant",
+        "repondez avec",
+        "envoyez nous",
+        "confirmez en repondant"
+      ]
+    },
+    "modalityKeywords": {
+      "must": ["doit", "vous devez", "necessaire de", "oblige de", "requis de"],
+      "should": ["devriez", "cense", "il faudrait"],
+      "command": ["cliquez", "verifiez", "confirmez", "mettez a jour", "telechargez", "installez", "envoyez", "fournissez", "entrez"]
+    }
+  },
+  "de": {
+    "requestPatterns": {
+      "payment": [
+        "zahlung senden",
+        "bankuberweisung",
+        "jetzt bezahlen",
+        "zahlung erforderlich",
+        "rechnung",
+        "falliger betrag"
+      ],
+      "credentials": [
+        "passwort eingeben",
+        "passwort bestatigen",
+        "passwort aktualisieren",
+        "anmeldeinformationen",
+        "anmelden",
+        "konto verifizieren"
+      ],
+      "personal_info": [
+        "geben sie ihre",
+        "bestatigen sie ihre",
+        "uberprufen sie ihre",
+        "sozialversicherung",
+        "geburtsdatum",
+        "reisepass",
+        "kreditkarte",
+        "bankkonto",
+        "routingnummer"
+      ],
+      "download": [
+        "anhang herunterladen",
+        "anhang offnen",
+        "datei herunterladen",
+        "installieren",
+        "ausfuhren",
+        "makros aktivieren",
+        "inhalt aktivieren"
+      ],
+      "click_link": [
+        "klicken sie hier",
+        "auf den link klicken",
+        "besuchen sie diesen link",
+        "folgen sie diesem link",
+        "diesen link offnen",
+        "klicken sie unten",
+        "klicken sie zum bestatigen"
+      ],
+      "reply": [
+        "antworten sie sofort",
+        "antworten sie jetzt",
+        "antworten sie mit",
+        "senden sie uns",
+        "bestatigen sie per antwort"
+      ]
+    },
+    "modalityKeywords": {
+      "must": ["mussen", "sollten", "mussen sie", "notig", "verpflichtet"],
+      "should": ["sollten", "solltest", "soll"],
+      "command": ["klicken", "prufen", "bestatigen", "aktualisieren", "herunterladen", "installieren", "senden", "bereitstellen", "eingeben"]
+    }
+  },
+  "it": {
+    "requestPatterns": {
+      "payment": [
+        "invia pagamento",
+        "bonifico bancario",
+        "paga ora",
+        "pagamento richiesto",
+        "fattura",
+        "importo dovuto"
+      ],
+      "credentials": [
+        "inserisci la password",
+        "conferma password",
+        "verifica password",
+        "aggiorna la password",
+        "credenziali di accesso",
+        "accedi",
+        "verifica account"
+      ],
+      "personal_info": [
+        "fornisci i tuoi",
+        "inserisci i tuoi",
+        "conferma i tuoi",
+        "verifica i tuoi",
+        "sicurezza sociale",
+        "data di nascita",
+        "passaporto",
+        "carta di credito",
+        "conto bancario",
+        "numero di instradamento"
+      ],
+      "download": [
+        "scarica l allegato",
+        "apri l allegato",
+        "scarica il file",
+        "installa",
+        "esegui",
+        "abilita macro",
+        "abilita contenuto"
+      ],
+      "click_link": [
+        "fai clic qui",
+        "clicca qui",
+        "visita questo link",
+        "segui questo link",
+        "apri questo link",
+        "clicca sotto",
+        "clicca per verificare"
+      ],
+      "reply": [
+        "rispondi subito",
+        "rispondi ora",
+        "rispondi con",
+        "inviaci",
+        "conferma rispondendo"
+      ]
+    },
+    "modalityKeywords": {
+      "must": ["devi", "dovrai", "necessario", "obbligatorio", "richiesto"],
+      "should": ["dovresti", "sarebbe opportuno", "dovrebbe"],
+      "command": ["fai clic", "verifica", "conferma", "aggiorna", "scarica", "installa", "invia", "fornisci", "inserisci"]
+    }
+  },
+  "pt": {
+    "requestPatterns": {
+      "payment": [
+        "enviar pagamento",
+        "transferencia bancaria",
+        "pague agora",
+        "pagamento necessario",
+        "fatura",
+        "valor devido"
+      ],
+      "credentials": [
+        "digite sua senha",
+        "confirme a senha",
+        "verifique a senha",
+        "atualize sua senha",
+        "credenciais de login",
+        "faca login",
+        "verificar conta"
+      ],
+      "personal_info": [
+        "forneca seus",
+        "insira seus",
+        "confirme seus",
+        "verifique seus",
+        "seguranca social",
+        "data de nascimento",
+        "passaporte",
+        "cartao de credito",
+        "conta bancaria",
+        "numero de roteamento"
+      ],
+      "download": [
+        "baixe o anexo",
+        "abra o anexo",
+        "baixe o arquivo",
+        "instalar",
+        "executar",
+        "ativar macros",
+        "ativar conteudo"
+      ],
+      "click_link": [
+        "clique aqui",
+        "clique no link",
+        "visite este link",
+        "siga este link",
+        "abra este link",
+        "clique abaixo",
+        "clique para verificar"
+      ],
+      "reply": [
+        "responda imediatamente",
+        "responda agora",
+        "responda com",
+        "envie nos",
+        "confirme respondendo"
+      ]
+    },
+    "modalityKeywords": {
+      "must": ["deve", "precisa", "necessario", "obrigatorio", "requerido"],
+      "should": ["deveria", "convem", "deveria ser"],
+      "command": ["clique", "verifique", "confirme", "atualize", "baixe", "instale", "envie", "forneca", "insira"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+Delivered-To: code14565@gmail.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Thu, 7 Nov 2025 14:30:45 -0800 (PST)
+X-Received: by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762529445312; Thu, 07 Nov 2025 14:30:45 -0800 (PST)
+Return-Path: <account-verify@arnazon-security.com>
+Received: from mail.arnazon-security.com (suspicious-host-456.net. [103.45.189.234]) by mx.google.com with SMTP id abc789; Thu, 07 Nov 2025 14:30:45 -0800 (PST)
+Received-SPF: fail (google.com: domain of account-verify@arnazon-security.com does not designate 103.45.189.234 as permitted sender) client-ip=103.45.189.234;
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@arnazon-security.com; spf=fail (google.com: domain of account-verify@arnazon-security.com does not designate 103.45.189.234 as permitted sender) smtp.mailfrom=account-verify@arnazon-security.com; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=amazon.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=arnazon-security.com; s=fake2025; t=1762529445; bh=FakeHash987654321=; b=InvalidSignature987654321xyz==
+Message-ID: <amazon-phish-789@arnazon-security.com>
+Date: Thu, 07 Nov 2025 14:30:45 -0800
+Subject: Action Required: Verify Your Amazon Account Information
+From: Amazon Account Services <no-reply@amazon.com>
+Reply-To: support@arnazon-security.com
+To: code14565@gmail.com
+Content-Type: multipart/alternative; boundary="----=_Part_98765_43210.1762529445000"

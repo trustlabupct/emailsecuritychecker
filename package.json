@@ -1,0 +1,25 @@
+{
+  "name": "trustemail",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && node scripts/build.mjs",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.24",
+    "jsdom": "^27.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "compromise": "^14.14.4",
+    "postal-mime": "^2.5.0",
+    "qr-scanner": "^1.4.2",
+    "tesseract.js": "^6.0.1"
+  }
+}

@@ -1,0 +1,10 @@
+Delivered-To: finance@example.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Tue, 11 Nov 2025 08:12:43 -0800 (PST)
+Return-Path: <ceo@gl0bal-industries.com>
+Received: from relay.gl0bal-industries.com (mail.gl0bal-industries.com. [185.203.112.54]) by mx.google.com with SMTP id h23-20020a5d53b3000000b002d4d0f5ce4esi1234564qke.12.2025.11.11.08.12.42 for <finance@example.com>; Tue, 11 Nov 2025 08:12:43 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (bad signature) header.i=@gl0bal-industries.com; spf=fail (google.com: domain of ceo@gl0bal-industries.com does not designate 185.203.112.54 as permitted sender) smtp.mailfrom=ceo@gl0bal-industries.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=global-industries.com
+Message-ID: <20251111081242.98765@gl0bal-industries.com>
+Date: Tue, 11 Nov 2025 08:12:42 -0800
+Subject: Urgent Wire Transfer Required
+From: Michael Carter <michael.carter@global-industries.com>
+Reply-To: Michael Carter <ceo@gl0bal-industries.com>

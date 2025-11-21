@@ -1,0 +1,64 @@
+{
+  "id": "phishing_019_click_here_dom",
+  "threadId": "phishing_019_click_here_dom",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "Secure Notice: Your invoice is overdue. Click here to confirm immediately.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      { "name": "Delivered-To", "value": "code14565@gmail.com" },
+      { "name": "Return-Path", "value": "<accounts@fake-ledger-alert.com>" },
+      {
+        "name": "Received",
+        "value": "from compromised-host.fake-ledger-alert.com (203.0.113.45) by mx.google.com with SMTP id test123; Tue, 12 Nov 2025 04:15:02 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail reason=\"no key\" header.i=@fake-ledger-alert.com; spf=fail (google.com: domain of accounts@fake-ledger-alert.com does not designate 203.0.113.45 as permitted sender) smtp.mailfrom=accounts@fake-ledger-alert.com; dmarc=fail (p=NONE) header.from=ledger.com"
+      },
+      { "name": "Message-ID", "value": "<clickhere123@fake-ledger-alert.com>" },
+      { "name": "Date", "value": "Tue, 12 Nov 2025 04:15:01 -0800" },
+      { "name": "Subject", "value": "Invoice Past Due - Action Required" },
+      { "name": "From", "value": "Ledger Billing <billing@ledger.com>" },
+      { "name": "To", "value": "code14565@gmail.com" },
+      { "name": "Content-Type", "value": "multipart/alternative; boundary=\"boundary_click_here_dom\"" }
+    ],
+    "body": { "size": 0 },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/plain; charset=\"UTF-8\"" },
+          { "name": "Content-Transfer-Encoding", "value": "base64" }
+        ],
+        "body": {
+          "size": 132,
+          "data": "U2VjdXJlIG5vdGljZTogeW91ciBpbnZvaWNlIGlzIG92ZXJkdWUuIENsaWNrIGhlcmUgdG8gY29uZmlybTogaHR0cDovL2xvZ2luLXNlY3VyaXR5LWFsZXJ0LnppcC92ZXJpZnk="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/html; charset=\"UTF-8\"" },
+          { "name": "Content-Transfer-Encoding", "value": "base64" }
+        ],
+        "body": {
+          "size": 512,
+          "data": "PCFET0NUWVBFIGh0bWw+PGh0bWw+PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OkFyaWFsIj4KPHA+PHN0cm9uZz5TZWN1cmUgTm90aWNlPC9zdHJvbmc+PC9wPgo8cD5Zb3VyIGludm9pY2UgaXMgb3ZlcmR1ZS4gPHNwYW4gc3R5bGU9ImNvbG9yOiNiMDA7Zm9udC13ZWlnaHQ6Ym9sZCI+QWN0aW9uIHJlcXVpcmVkPC9zcGFuPi48L3A+CjxwPjxhIGhyZWY9Imh0dHA6Ly9sb2dpbi1zZWN1cml0eS1hbGVydC56aXAvdmVyaWZ5IiBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7cGFkZGluZzoxMnB4IDI0cHg7YmFja2dyb3VuZDojZDMyO2NvbG9yOiNmZmY7dGV4dC1kZWNvcmF0aW9uOm5vbmUiPjxzcGFuPkNsaWNrPC9zcGFuPiA8ZW0+aGVyZTwvZW0+IHRvIGNvbmZpcm08L2E+PC9wPgo8cCBzdHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6Izc3NyI+SWYgdGhlIGJ1dHRvbiBmYWlscywgcGFzdGUgdGhpcyBsaW5rOiBodHRwOi8vbG9naW4tc2VjdXJpdHktYWxlcnQuemlwL3ZlcmlmeTwvcD4KPC9ib2R5PjwvaHRtbD4="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 2300,
+  "historyId": "8010",
+  "internalDate": "1762943701000"
+}

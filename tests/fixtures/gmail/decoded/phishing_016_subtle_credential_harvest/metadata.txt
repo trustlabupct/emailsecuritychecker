@@ -1,0 +1,8 @@
+Email ID: phishing_016_subtle_credential_harvest
+Subject: MFA Enrollment - Action Requested
+From: IT Support <it.support@techcorp-services.com>
+To: employee@company.com
+Date: Mon, 04 Nov 2025 14:23:30 -0800
+
+================================================================================
+

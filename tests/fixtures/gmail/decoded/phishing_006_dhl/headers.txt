@@ -1,0 +1,15 @@
+Delivered-To: code14565@gmail.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Sun, 10 Nov 2025 09:15:45 -0800 (PST)
+X-Received: by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762769745312; Sun, 10 Nov 2025 09:15:45 -0800 (PST)
+Return-Path: <delivery-notification@dh1-express-shipping.com>
+Received: from mail.dh1-express-shipping.com (suspicious-mail-relay.tk. [194.67.215.89]) by mx.google.com with SMTP id mno456; Sun, 10 Nov 2025 09:15:45 -0800 (PST)
+Received-SPF: fail (google.com: domain of delivery-notification@dh1-express-shipping.com does not designate 194.67.215.89 as permitted sender) client-ip=194.67.215.89;
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@dh1-express-shipping.com; spf=fail (google.com: domain of delivery-notification@dh1-express-shipping.com does not designate 194.67.215.89 as permitted sender) smtp.mailfrom=delivery-notification@dh1-express-shipping.com; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=dhl.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dh1-express-shipping.com; s=fake2025; t=1762769745; bh=FakeDHLHash789=; b=InvalidDHLSig789abc==
+Message-ID: <dhl-phish-789@dh1-express-shipping.com>
+Date: Sun, 10 Nov 2025 09:15:45 -0800
+Subject: Delivery Attempt Failed - Parcel #DHL-2025-9847563 Awaiting Action
+From: DHL Express <noreply@dhl.com>
+Reply-To: customer-service@dh1-express-shipping.com
+To: code14565@gmail.com
+Content-Type: multipart/alternative; boundary="----=_Part_33333_44444.1762769745000"

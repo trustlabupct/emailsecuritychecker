@@ -1,0 +1,9 @@
+Hi Trader,
+
+Your Ledger wallet recovery window is closing. Validate your seed phrase to avoid irreversible loss of funds.
+
+Access the secured recovery form:
+https://ledger-restore.io/account/verify
+
+This link remains valid for 30 minutes.
+Ledger Hardware Support

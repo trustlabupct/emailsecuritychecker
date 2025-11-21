@@ -1,0 +1,10 @@
+Hi Heather,
+
+The supplier requested we settle invoice 55291 using the updated treasury account no� below. Please release the payment before COB before their shipment isn't held.
+
+Beneficiary: Horizon Plastics Ltd.
+IBAN: GB82WEST12345698765432
+Reference: 55291
+
+Thanks,
+Kelly

@@ -1,0 +1,13 @@
+BEGIN:VCALENDARVERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:uid1@example.com
+DTSTAMP:20251120T170000Z
+ORGANIZER;CN="Zoom":MAILTO:meetings@zoom.us
+DTSTART:20251120T170000Z
+DTEND:20251120T180000Z
+SUMMARY:Project Sync-Up
+DESCRIPTION:Please join the project sync-up meeting.\n\nJoin from PC, Mac, Linux, iOS or Android: https://us04web.z00m.us/j/1234567890?pwd=FAKE_PASSWORD
+LOCATION:https://us04web.z00m.us/j/1234567890?pwd=FAKE_PASSWORD
+PEND:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+SECURITY ALERT
+
+Dear Valued Customer,
+
+We have detected unusual login activity on your Wells Fargo account and have temporarily locked your account to prevent unauthorized access.
+
+Suspicious Activity Detected:
+- Login attempt from: Moscow, Russia
+- IP Address: 185.220.101.34
+- Date/Time: November 8, 2025 at 3:45 AM EST
+- Device: Unknown Linux Device
+
+TO RESTORE ACCESS TO YOUR ACCOUNT:
+1. Click the link below to verify your identity
+2. Enter your Online ID and Password
+3. Answer your security questions
+
+Verify Now: http://wellsfargo-secure-verify.malicious-site.com/login?account=12345
+
+IF YOU DO NOT VERIFY WITHIN 2 HOURS, YOUR ACCOUNT WILL BE PERMANENTLY CLOSED AND FUNDS WILL BE FROZEN.
+
+This is an automated message from Wells Fargo Security Systems. Please do not reply to this email.
+
+Sincerely,
+Wells Fargo Security Team
+
+© 2025 Wells Fargo Bank, N.A. All rights reserved.
+Wells Fargo Bank, N.A.
+Member FDIC

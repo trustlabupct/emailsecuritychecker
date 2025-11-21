@@ -1,0 +1,97 @@
+{
+  "id": "phishing_016_google_redirect",
+  "threadId": "phishing_016_google_redirect",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "Jane Doe has shared a document with you: Q4 Financial Projections. Open in Docs.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "user@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Tue, 18 Nov 2025 10:00:00 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<bounces@phishing-domain.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.phishing-domain.com (phishing-domain.com. [198.51.100.123]) by mx.google.com with SMTP id a1b2c3d4; Tue, 18 Nov 2025 10:00:00 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail reason=\"signature verification failed\" header.i=@phishing-domain.com; spf=fail (google.com: domain of bounces@phishing-domain.com does not designate 198.51.100.123 as permitted sender) smtp.mailfrom=bounces@phishing-domain.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=google.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<phishing-redirect-123@phishing-domain.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Tue, 18 Nov 2025 10:00:00 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Document shared with you: \"Q4 Financial Projections\""
+      },
+      {
+        "name": "From",
+        "value": "Jane Doe (Google Docs) <docs-noreply@google.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "phisher@phishing-domain.com"
+      },
+      {
+        "name": "To",
+        "value": "user@example.com"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          }
+        ],
+        "body": {
+          "size": 250,
+          "data": "SmFuZSBEb2UgKviaSBqYW5lLmRvZUBleGFtcGxlLmNvbSkgIGhhcyBzaGFyZWQgYSBkb2N1bWVudCB3aXRoIHlvdS4KClwiUTQgRmluYW5jaWFsIFByb2plY3Rpb25zXCIgaXMgcmVhZHkgZm9yIHJldmlldy4gT3BlbiBpdCBpbiBHb29nbGUgRG9jcy4KClVzZSB0aGlzIGxpbms6IGh0dHBzOi8vc2NyaXB0Lmdvb2dsZS5jb20vbWFjcm9zL3MvQUtmeWNiamFiY2RlZmdoL2V4ZWM_cmVkaXJlY3Q9aHR0cHM6Ly9tYWxpY2lvdXMtc2l0ZS5jb20vR29vZ2xlLURvY3MtTG9naW4K"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          }
+        ],
+        "body": {
+          "size": 2500,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbCxzYW5zLXNlcmlmO21hcmdpbjowO3BhZGRpbmc6MDtiYWNrZ3JvdW5kOiNmNWY1ZjU7Ij48ZGl2IHN0eWxlPSJtYXgtd2lkdGg6NjAwcHg7bWFyZ2luOjIwcHggYXV0bztwYWRkaW5nOjIwcHg7YmFja2dyb3VuZDp3aGl0ZTtib3JkZXItcmFkaXVzOjhweDsiPjxwIHN0eWxlPSJmb250LXNpemU6MTRweDtjb2xvcjojNjY2OyI-SmFuZSBEb2UgKDs8YSBocmVmPSJtYWlsdG86amFuZS5kb2VAZXhhbXBsZS5jb20iIHN0eWxlPSJjb2xvcjojMTU1NjkwO3RleHQtZGVjb3JhdGlvbjpub25lOyI-amFuZS5kb2VAZXhhbXBsZS5jb208L2E-KSBoYXMgc2hhcmVkIGEgZG9jdW1lbnQgd2l0aCB5b3UuPC9wPjxkaXYgc3R5bGU9ImJvcmRlcjoxcHggc29saWQgI2RlZGVkZTtib3JkZXItcmFkaXVzOjRweDttYXJnaW46MjBweCAwO3BhZGRpbmc6MjBweDsiPjxoMiBzdHlsZT0ibWFyZ2luOjAgMDsxMHB4IDA7Zm9udC1zaXplOjIwcHg7Ij5RNCBGaW5hbmNpYWwgUHJvamVjdGlvbnM8L2gyPjxwIHN0eWxlPSJtYXJnaW46MDtjb2xvcjojNjY2OyI-SmFuZSBEb2UgaXMgc2hhcmluZyB0aGlzIGRvY3VtZW50IHdpdGggeW91LjwvcD48L2Rpdj48YSBocmVmPSJodHRwczovL3NjcmlwdC5nb29nbGUuY29tL21hY3Jvcy9zL0FLZnljaXlXbVlVbWlJSkJqQ01hS2s0V0tUSlBSRmFRL2V4ZWM_cmVkaXJlY3Q9aHR0cHM6Ly9tYWxpY2lvdXMtc2l0ZS5jb20vR29vZ2xlLURvY3MtTG9naW4iIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jaztiYWNrZ3JvdW5kOiM0Mjg1RjQ7Y29sb3I6d2hpdGU7cGFkZGluZzoxMHB4IDIwcHg7bWFyZ2luLXRvcDoyMHB4O2JvcmRlci1yYWRpdXM6NHB4O3RleHQtZGVjb3JhdGlvbjpub25lO2ZvbnQtd2VpZ2h0OmJvbGQ7Ij5PcGVuIGluIERvY3M8L2E-PGRpdiBzdHlsZT0ibWFyZ2luLXRvcDoyMHB4O3BhZGRpbmctdG9wOjIwcHg7Ym9yZGVyLXRvcDoxcHggc29saWQgI2RlZGVkZTtmb250LXNpemU6MTJweDtjb2xvcjojNjY2OyI-R29vZ2xlIERvY3M6IFJlcGx5IHRvIHRoaXMgZW1haWwgdG8gY29tbWVudCBvbiB0aGUgZG9jdW1lbnQuPC9kaXY-PC9kaXY-PC9ib2R5PjwvaHRtbD4="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 4500,
+  "historyId": "phishing_016_google_redirect"
+}

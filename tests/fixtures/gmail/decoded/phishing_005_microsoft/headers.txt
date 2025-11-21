@@ -1,0 +1,15 @@
+Delivered-To: code14565@gmail.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Sat, 9 Nov 2025 11:30:15 -0800 (PST)
+X-Received: by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762691415312; Sat, 09 Nov 2025 11:30:15 -0800 (PST)
+Return-Path: <billing@micros0ft-office365.net>
+Received: from mail.micros0ft-office365.net (suspicious-mailer-123.ru. [91.213.8.154]) by mx.google.com with SMTP id jkl123; Sat, 09 Nov 2025 11:30:15 -0800 (PST)
+Received-SPF: fail (google.com: domain of billing@micros0ft-office365.net does not designate 91.213.8.154 as permitted sender) client-ip=91.213.8.154;
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@micros0ft-office365.net; spf=fail (google.com: domain of billing@micros0ft-office365.net does not designate 91.213.8.154 as permitted sender) smtp.mailfrom=billing@micros0ft-office365.net; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=microsoft.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=micros0ft-office365.net; s=fake2025; t=1762691415; bh=FakeMSHash123456=; b=InvalidMSSignature123xyz==
+Message-ID: <microsoft-phish-123@micros0ft-office365.net>
+Date: Sat, 09 Nov 2025 11:30:15 -0800
+Subject: Office 365 Subscription Expiration Notice - Action Required
+From: Microsoft Billing <no-reply@microsoft.com>
+Reply-To: billing-support@micros0ft-office365.net
+To: code14565@gmail.com
+Content-Type: multipart/mixed; boundary="----=_Part_11111_22222.1762691415000"

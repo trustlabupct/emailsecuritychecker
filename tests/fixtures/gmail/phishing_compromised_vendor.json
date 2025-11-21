@@ -1,0 +1,102 @@
+{
+  "id": "phishing_013_compromised_vendor",
+  "threadId": "phishing_013_compromised_vendor",
+  "labelIds": [
+    "UNREAD",
+    "IMPORTANT",
+    "INBOX"
+  ],
+  "snippet": "Hi Heather, The supplier asked that we settle invoice 55291 using the updated treasury account listed below...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "heather@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:5220:10a8:b0:1a2:a1a5:36a5 with SMTP id mn19csp556677rdb; Mon, 17 Nov 2025 07:18:03 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<kelly.roberts@acmeparts.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.acmeparts.com (mail.acmeparts.com. [66.102.88.23]) by mx.google.com with ESMTPS id q21-20020a5d4784000000b002cfda8211ddsi1534211qke.321.2025.11.17.07.18.02 for <heather@example.com>; Mon, 17 Nov 2025 07:18:03 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=pass header.i=@acmeparts.com header.s=google2024 header.b=abc123; spf=pass (google.com: domain of kelly.roberts@acmeparts.com designates 66.102.88.23 as permitted sender) smtp.mailfrom=kelly.roberts@acmeparts.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=acmeparts.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251117071802.889944@acmeparts.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Mon, 17 Nov 2025 07:18:02 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Re: INV-55291 settlement"
+      },
+      {
+        "name": "From",
+        "value": "Kelly Roberts <kelly.roberts@acmeparts.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "Accounts Team <settlements@acmeparts-payments.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 280,
+          "data": "SGkgSGVhdGhlciwKClRoZSBzdXBwbGllciByZXF1ZXN0ZWQgd2Ugc2V0dGxlIGludm9pY2UgNTUyOTEgdXNpbmcgdGhlIHVwZGF0ZWQgdHJlYXN1cnkgYWNjb3VudCBub90gYmVsb3cuIFBsZWFzZSByZWxlYXNlIHRoZSBwYXltZW50IGJlZm9yZSBDT0IgYmVmb3JlIHRoZWlyIHNoaXBtZW50IGlzbid0IGhlbGQuCgpCZW5lZmljaWFyeTogSG9yaXpvbiBQbGFzdGljcyBMdGQuCklCQU46IEdCODJXRVNUMTIzNDU2OTg3NjU0MzIKUmVmZXJlbmNlOiA1NTI5MQoKVGhhbmtzLApLZWxseQ"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 620,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksQXJpYWwsc2Fucy1zZXJpZjtjb2xvcjojMWYyOTMzIj48cD5IaSBIZWF0aGVyLDwvcD48cD5UaGUgc3VwcGllciBhc2tlZCB0aGF0IHdlIHNldHRsZSBpbnZvaWNlIDxzdHJvbmc-PjU1MjkxPC9zdHJvbmc-IHVzaW5nIHRoZSB1cGRhdGVkIHRyZWFzdXJ5IGFjY291bnQgbGlzdGVkIGJlbG93LiBQbGVhc2UgcmVsZWFzZSB0aGUgcGF5bWVudCBiZWZvcmUgY2xvc2Ugb2YgYnVzaW5lc3Mgc28gdGhlaXIgc2hpcG1lbnQgaXNuidQgaGVsZC48L3A-PHVsPjxsaT48c3Ryb25nPkJlbmVmaWNpYXJ5Ojwvc3Ryb25nPiBIb3Jpem9uIFBsYXN0aWNzIEx0ZC48L2xpPjxsaT48c3Ryb25nPklCQU46PC9zdHJvbmc-IEdCODIgV0VTVCAxMjM0IDU2OTggNzY1NCAzMjwvbGk-PGxpPjxzdHJvbmc-UmVmZXJlbmNlOjwvc3Ryb25nPiA1NTI5MTwvbGk-PC91bD48cD5MZXQgbWUga25vdyBvbmNlIGl0J3MgY29tcGxldGVkLjwvcD48cD5UaGFua3MsPGJyPktlbGx5PC9wPjwvYm9keT48L2h0bWw-"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 4600,
+  "historyId": "8899001122"
+}

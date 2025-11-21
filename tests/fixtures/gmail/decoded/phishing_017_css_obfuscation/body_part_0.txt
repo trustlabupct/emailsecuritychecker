@@ -1,0 +1,2 @@
+Please review the document at https://safe.portal.contoso.com/docs/12345.
+Access expires in 24 hours.

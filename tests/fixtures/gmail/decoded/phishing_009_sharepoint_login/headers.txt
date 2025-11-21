@@ -1,0 +1,10 @@
+Delivered-To: user@example.com
+Received: by 2002:a05:7220:14a8:b0:1a2:a1a5:36a5 with SMTP id ok22csp778995rdb; Wed, 12 Nov 2025 06:48:11 -0800 (PST)
+Return-Path: <files@contoso-secure.com>
+Received: from sharepoint.contoso-secure.com (outbound.contoso-secure.com. [193.56.21.87]) by mx.google.com with ESMTPS id q15-20020a5d4c37000000b002aa7e3f239dsi1827363qka.234.2025.11.12.06.48.10 for <user@example.com>; Wed, 12 Nov 2025 06:48:11 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (no key for signature) header.i=@contoso-secure.com; spf=fail (google.com: domain of files@contoso-secure.com does not designate 193.56.21.87 as permitted sender) smtp.mailfrom=files@contoso-secure.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=contoso.com
+Message-ID: <20251112064810.445566@contoso-secure.com>
+Date: Wed, 12 Nov 2025 06:48:10 -0800
+Subject: Contoso Logistics shared "FY25 Master Contract.pdf" with you
+From: SharePoint Online <sharepoint@contoso.com>
+Reply-To: SharePoint Online <files@contoso-secure.com>

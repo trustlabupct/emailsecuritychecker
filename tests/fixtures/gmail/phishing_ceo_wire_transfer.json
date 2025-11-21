@@ -1,0 +1,102 @@
+{
+  "id": "phishing_008_ceo_wire",
+  "threadId": "phishing_008_ceo_wire",
+  "labelIds": [
+    "UNREAD",
+    "INBOX",
+    "IMPORTANT"
+  ],
+  "snippet": "Finance Team, We need to process an urgent wire transfer for $248,500 to our Hong Kong supplier before close of business. Beneficiary: Sunrise...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "finance@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Tue, 11 Nov 2025 08:12:43 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<ceo@gl0bal-industries.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from relay.gl0bal-industries.com (mail.gl0bal-industries.com. [185.203.112.54]) by mx.google.com with SMTP id h23-20020a5d53b3000000b002d4d0f5ce4esi1234564qke.12.2025.11.11.08.12.42 for <finance@example.com>; Tue, 11 Nov 2025 08:12:43 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (bad signature) header.i=@gl0bal-industries.com; spf=fail (google.com: domain of ceo@gl0bal-industries.com does not designate 185.203.112.54 as permitted sender) smtp.mailfrom=ceo@gl0bal-industries.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=global-industries.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251111081242.98765@gl0bal-industries.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Tue, 11 Nov 2025 08:12:42 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Urgent Wire Transfer Required"
+      },
+      {
+        "name": "From",
+        "value": "Michael Carter <michael.carter@global-industries.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "Michael Carter <ceo@gl0bal-industries.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 352,
+          "data": "RmluYW5jZSBUZWFtLAoKV2UgbmVlZCB0byBwcm9jZXNzIGFuIHVyZ2VudCB3aXJlIHRyYW5zZmVyIGZvciAkMjQ4LDUwMCB0byBvdXIgSG9uZyBLb25nIHN1cHBsaWVyIGJlZm9yZSB0aGUgY2xvc2Ugb2YgYnVzaW5lc3MuCgpCZW5lZmljaWFyeTogU3VucmlzZSBDb21wb25lbnRzIEx0ZC4KQWNjb3VudDogMTI4My05OTgxLTIyMTkKQmFuazogRWFzdCBBc2lhIEludGVybmF0aW9uYWwgQmFuawoKS2VlcCB0aGlzIHN0cmljdGx5IGNvbmZpZGVudGlhbC4gUmVwbHkgb25jZSBwYXltZW50IGlzIGNvbmZpcm1lZC4KCuKAlCBNaWNoYWVsIENhcnRlcgpDaGllZiBFeGVjdXRpdmUgT2ZmaWNlcg"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 620,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksQXJpYWwsc2Fucy1zZXJpZjtjb2xvcjojMjIyO2xpbmUtaGVpZ2h0OjEuNSI-PHA-RmluYW5jZSBUZWFtLDwvcD48cD5XZSBtdXN0IGV4ZWN1dGUgYW4gdXJnZW50IHdpcmUgdHJhbnNmZXIgZm9yIDxzdHJvbmc-JDI0OCw1MDA8L3N0cm9uZz4gdG8gb3VyIEhvbmcgS29uZyBzdXBwbGllciBiZWZvcmUgY2xvc2Ugb2YgYnVzaW5lc3MuPC9wPjxwPjxzdHJvbmc-QmVuZWZpY2lhcnk6PC9zdHJvbmc-IFN1bnJpc2UgQ29tcG9uZW50cyBMdGQuPGJyPjxzdHJvbmc-QWNjb3VudDo8L3N0cm9uZz4gMTI4My05OTgxLTIyMTk8YnI-PHN0cm9uZz5CYW5rOjwvc3Ryb25nPiBFYXN0IEFzaWEgSW50ZXJuYXRpb25hbCBCYW5rPC9wPjxwPktlZXAgdGhpcyBzdHJpY3RseSBjb25maWRlbnRpYWwuIFJlcGx5IG9uY2UgcGF5bWVudCBpcyBjb25maXJtZWQuPC9wPjxwPuKAlCBNaWNoYWVsIENhcnRlcjxicj5DaGllZiBFeGVjdXRpdmUgT2ZmaWNlcjwvcD48L2JvZHk-PC9odG1sPg"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5120,
+  "historyId": "3344556677"
+}

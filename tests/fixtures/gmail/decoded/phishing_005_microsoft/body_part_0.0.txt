@@ -1,0 +1,35 @@
+Office 365 Subscription Expiration Notice
+
+Dear Valued Customer,
+
+This is an urgent notification regarding your Microsoft Office 365 subscription.
+
+Your subscription will expire in 24 hours due to a payment issue. To avoid service interruption, please update your payment information immediately.
+
+Subscription Details:
+- Plan: Office 365 Business Premium
+- Expiration Date: November 10, 2025
+- Amount Due: $29.99/month
+- Invoice Number: INV-2025-1109
+
+Action Required:
+1. Download the attached invoice document
+2. Review your billing information
+3. Click the link in the invoice to update payment details
+
+If you do not take action within 24 hours:
+- Your access to Office 365 applications will be suspended
+- All stored documents and emails will be iaccessible
+- You will lose access to OneDrive storage
+
+Please download the attached invoice and follow the instructions.
+
+Thank you for choosing Microsoft.
+
+Sincerely,
+Microsoft Billing Team
+
+© 2025 Microsoft Corporation. All rights reserved.
+Microsoft Corporation
+One Microsoft Way
+Redmond, WA 98052-U5A

@@ -1,0 +1,15 @@
+Delivered-To: employee@company.com
+Received: by 2002:a05:6402:3595:b0:4d2:c7b3:4f91 with SMTP id d21csp2341567iov; Mon, 04 Nov 2025 14:23:45 -0800 (PST)
+Return-Path: <it.support@techcorp-services.com>
+Received: from mail-sender-01.techcorp-services.com (mail-sender-01.techcorp-services.com. [185.70.41.23]) by mx.google.com with ESMTPS id h15-20020a05620a0d0f00b0076e2a3f1c8asi3456789qko.456.2025.11.04.14.23.44 for <employee@company.com> (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Mon, 04 Nov 2025 14:23:45 -0800 (PST)
+Received-SPF: pass (google.com: domain of it.support@techcorp-services.com designates 185.70.41.23 as permitted sender) client-ip=185.70.41.23;
+Authentication-Results: mx.google.com; dkim=pass header.i=@techcorp-services.com header.s=default header.b=K7mP9xLq; spf=pass (google.com: domain of it.support@techcorp-services.com designates 185.70.41.23 as permitted sender) smtp.mailfrom=it.support@techcorp-services.com; dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=techcorp-services.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=techcorp-services.com; s=default; t=1730757824; bh=mK3pL9Q2xJ7VtH9R1fJQ8xU=; h=From:To:Subject:Date:Message-ID; b=K7mP9xLqN5vR2tY8wZ3bC6dE1fG4hI9jK0lM7nO8pQ9rS2tU3vW4xY5zA6bC7dE8f
+Message-ID: <CAF8B2E9-4D1C-4A3E-8F2D-1B5C9E7A3D6F@techcorp-services.com>
+Date: Mon, 04 Nov 2025 14:23:30 -0800
+Subject: MFA Enrollment - Action Requested
+From: IT Support <it.support@techcorp-services.com>
+To: employee@company.com
+Reply-To: it.support@techcorp-services.com
+X-Mailer: Microsoft Outlook 16.0
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_0023_01DB2E4F.A3B5C7D0"

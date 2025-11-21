@@ -1,0 +1,109 @@
+{
+  "id": "legit_001_google_newsletter",
+  "threadId": "legit_001_google_newsletter",
+  "labelIds": [
+    "CATEGORY_UPDATES",
+    "INBOX"
+  ],
+  "snippet": "Welcome to the Google Developer Program! Explore new tools, events, and resources to build what's next.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "developer@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Thu, 06 Nov 2025 09:05:12 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<noreply@scoutcamp.bounces.google.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail-ob0-f172.google.com (mail-ob0-f172.google.com. [209.85.214.172]) by mx.google.com with SMTPS id o3-20020a5d4f17000000b002b4910aa5f8sor1454329qvr.181.2025.11.06.09.05.11 for <developer@example.com> (Google Transport Security); Thu, 06 Nov 2025 09:05:12 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=pass header.i=@google.com header.s=20230601 header.b=WEGL4Yk8; spf=pass (google.com: domain of noreply@scoutcamp.bounces.google.com designates 209.85.214.172 as permitted sender) smtp.mailfrom=noreply@scoutcamp.bounces.google.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=20230601; t=1762422312; bh=Cn0Q7y7x1J1U4VtH4Q1FJQqB9xU=; b=FakeSignatureForFixture1234567890abcdef=="
+      },
+      {
+        "name": "Message-ID",
+        "value": "<welcome123456@google.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Thu, 06 Nov 2025 09:05:12 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Welcome to Google Developer Program"
+      },
+      {
+        "name": "From",
+        "value": "Google Developer Program <developers-noreply@google.com>"
+      },
+      {
+        "name": "To",
+        "value": "developer@example.com"
+      },
+      {
+        "name": "List-Unsubscribe",
+        "value": "<mailto:noreply@google.com?subject=unsubscribe>, <https://developers.google.com/unsubscribe?email=developer%40example.com>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 144,
+          "data": "SGVsbG8gRGV2ZWxvcGVyLAoKV2VsY29tZSB0byB0aGUgR29vZ2xlIERldmVsb3BlciBQcm9ncmFtIQoKVGhhbmtzLApHb29nbGUgRGV2ZWxvcGVyIFJlbGF0aW9ucw"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 380,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9J2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWYnPjxoMT5XZWxjb21lIHRvIEdvb2dsZSBEZXZlbG9wZXIgUHJvZ3JhbTwvaDE-PHA-VGhhbmtzIGZvciBqb2luaW5nIG91ciBjb21tdW5pdHkuIEV4cGxvcmUgdGhlIGxhdGVzdCByZXNvdXJjZXMgYW5kIGV2ZW50cy48L3A-PHA-PGEgaHJlZj0naHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20nPlZpc2l0IHRoZSBkZXZlbG9wZXIgcG9ydGFsPC9hPjwvcD48L2JvZHk-PC9odG1sPg"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 4096,
+  "historyId": "9876543210"
+}

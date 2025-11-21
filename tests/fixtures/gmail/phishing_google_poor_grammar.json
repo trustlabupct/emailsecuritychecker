@@ -1,0 +1,123 @@
+{
+  "id": "phishing_004_google",
+  "threadId": "phishing_004_google",
+  "labelIds": [
+    "UNREAD",
+    "IMPORTANT",
+    "INBOX"
+  ],
+  "snippet": "Dear user your Google account have been compromise. We detected suspicious activity and need you confirm your identity immediate. Click here for verify account or will be suspended permanent.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "code14565@gmail.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Fri, 8 Nov 2025 16:20:30 -0800 (PST)"
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762621230312; Fri, 08 Nov 2025 16:20:30 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<no-reply@g00gle-security-team.net>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.g00gle-security-team.net (phishing-host-999.cn. [58.218.199.147]) by mx.google.com with SMTP id ghi789; Fri, 08 Nov 2025 16:20:30 -0800 (PST)"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "fail (google.com: domain of no-reply@g00gle-security-team.net does not designate 58.218.199.147 as permitted sender) client-ip=58.218.199.147;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail reason=\"signature verification failed\" header.i=@g00gle-security-team.net; spf=fail (google.com: domain of no-reply@g00gle-security-team.net does not designate 58.218.199.147 as permitted sender) smtp.mailfrom=no-reply@g00gle-security-team.net; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=google.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=g00gle-security-team.net; s=fake2025; t=1762621230; bh=BadHashGoogle999=; b=FakeGoogleSig999xyz=="
+      },
+      {
+        "name": "Message-ID",
+        "value": "<google-phish-999@g00gle-security-team.net>"
+      },
+      {
+        "name": "Date",
+        "value": "Fri, 08 Nov 2025 16:20:30 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Important Security Alert for Your Google Account !!!"
+      },
+      {
+        "name": "From",
+        "value": "Google Security Team <noreply@google.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "security-support@g00gle-security-team.net"
+      },
+      {
+        "name": "To",
+        "value": "code14565@gmail.com"
+      },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"----=_Part_77777_88888.1762621230000\""
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 1024,
+          "data": "SW1wb3J0YW50IFNlY3VyaXR5IEFsZXJ0CgpEZWFyIHVzZXIsCgpZb3VyIEdvb2dsZSBhY2NvdW50IGhhdmUgYmVlbiBjb21wcm9taXNlIGJ5IHVua25vd24gcGVyc29ucyBmcm9tIGZvcmVpZ24gY291bnRyeS4gV2UgZGV0ZWN0ZWQgc3VzcGljaW91cyBhY3Rpdml0eSBvbiB5b3VyIGFjY291bnQgYW5kIG5lZWQgeW91IGNvbmZpcm0geW91ciBpZGVudGl0eSBpbW1lZGlhdGUuCgpTdXNwaWNpb3VzIGFjdGl2aXRpZXMgZGV0ZWN0ZWQ6Ci0gTG9naW4gYXR0ZW1wdCBmcm9tIENoaW5hIGF0IDM6MzAgQU0KLSBQYXNzd29yZCBjaGFuZ2UgYXR0ZW1wdGVkIG11bHRpcGxlIHRpbWVzCi0gVW51c3VhbCBlbWFpbCBzZW5kaW5nIGFjdGl2aXR5Ci0gQWNjZXNzIGZyb20gbmV3IGRldmljZSBub3QgcmVjb2duaXplZAoKVE8gUFJPVEVDVCBZT1VSIEFDQ09VTlQ6ClBsZWFzZSBjbGljayBvbiB0aGUgbGluayBiZWxsb3cgdG8gdmVyaWZ5IGFjY291bnQgYW5kIGNvbmZpcm0gaXMgeW91OgoKaHR0cDovL2dvb2dsZS1hY2NvdW50LXZlcmlmeS1zZWN1cml0eS5zdXNwaWNpb3VzLWRvbWFpbi5jbi9sb2dpbj9pZD05OTkKCklGIFlPVSBETyBOT1QgVkVSSUZZIElOIDI0IEhPVVJTLCBZT1VSIEFDQ09VTlQgV0lMTCBCRSBTVVNQRU5ERUQgUEVSTUFORU5UIFVOVCBBTFNPIEFMTCBET0NVTUVOVFMgQU5EIEVNQVJMU1MgV0lMTCBCRSBERUxFVEVELgoKVGhhbmsgeW91IGZvciB5b3VyIGNvb3BlcmF0aW9uLgoKUmVnYXJkcywKR29vZ2xlIFNlY3VyaXR5IFRlYW0KR29vZ2xlIExMQwoxNjAwIEFtcGhpdGhlYXRyZSBQYXJrd2F5Ck1vdW50YWluIFZpZXcsIENBIDk0MDQzCgpOT1RFOiBUaGlzIGVtYWlsIHdhcyBzZW5kIGF1dG9tYXRpY2FsbHkuIFBsZWFzZSBkbyBub3QgcmVzcG9uZCB0byB0aGlzIGVtYWlsLg=="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 3890,
+          "data": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KPHRpdGxlPkdvb2dsZSBTZWN1cml0eSBBbGVydDwvdGl0bGU+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPHN0eWxlPgpib2R5IHsKICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7CiAgbWFyZ2luOiAwOwogIHBhZGRpbmc6IDE1cHg7CiAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTsKfQouY29udGFpbmVyIHsKICBtYXgtd2lkdGg6IDYwMHB4OwogIG1hcmdpbjogMCBhdXRvOwogIGJhY2tncm91bmQ6IHdoaXRlOwogIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7Cn0KLmhlYWRlciB7CiAgYmFja2dyb3VuZDogIzQyODVmNDsKICBjb2xvcjogd2hpdGU7CiAgcGFkZGluZzogMTVweDsKICB0ZXh0LWFsaWduOiBsZWZ0Owp9Ci5jb250ZW50IHsKICBwYWRkaW5nOiAyMHB4Owp9Ci5hbGVydCB7CiAgYmFja2dyb3VuZDogI2ZmZjRlNTsKICBib3JkZXI6IDJweCBzb2xpZCAjZmY5ODAwOwogIHBhZGRpbmc6IDE1cHg7CiAgbWFyZ2luOiAxNXB4IDA7Cn0KLmJ1dHRvbiB7CiAgZGlzcGxheTogYmxvY2s7CiAgd2lkdGg6IDIwMHB4OwogIG1hcmdpbjogMjBweCBhdXRvOwogIGJhY2tncm91bmQ6ICM0Mjg1ZjQ7CiAgY29sb3I6IHdoaXRlOwogIHBhZGRpbmc6IDEycHggMjBweDsKICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogIGZvbnQtc2l6ZTogMTZweDsKICBmb250LXdlaWdodDogYm9sZDsKfQouZm9vdGVyIHsKICBiYWNrZ3JvdW5kOiAjZjBmMGYwOwogIHBhZGRpbmc6IDE1cHg7CiAgZm9udC1zaXplOiAxMnB4OwogIHRleHQtYWxpZ246IGNlbnRlcjsKICBjb2xvcjogIzY2NjsKfQo8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5Pgo8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogIDxkaXYgY2xhc3M9ImhlYWRlciI+CiAgICA8aDIgc3R5bGU9Im1hcmdpbjogMDsgZm9udC1zaXplOiAyMHB4OyI+R29vZ2xlIFNlY3VyaXR5IEFsZXJ0PC9oMj4KICA8L2Rpdj4KICAKICA8ZGl2IGNsYXNzPSJjb250ZW50Ij4KICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDE1cHg7IGNvbG9yOiAjMzMzOyI+RGVhciB1c2VyLDwvcD4KICAgIAogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTVweDsgY29sb3I6ICMzMzM7IGxpbmUtaGVpZ2h0OiAxLjQ7Ij4KICAgICAgWW91ciBHb29nbGUgYWNjb3VudCA8c3Ryb25nIHN0eWxlPSJjb2xvcjogI2Q5MzAyNTsiPmhhdmUgYmVlbiBjb21wcm9taXNlPC9zdHJvbmc+IGJ5IHVua25vd24gcGVyc29ucyBmcm9tIGZvcmVpZ24gY291bnRyeS4gV2UgZGV0ZWN0ZWQgc3VzcGljaW91cyBhY3Rpdml0eSBvbiB5b3VyIGFjY291bnQgYW5kIDxzdHJvbmc+bmVlZCB5b3UgY29uZmlybSB5b3VyIGlkZW50aXR5IGltbWVkaWF0ZTwvc3Ryb25nPi4KICAgIDwvcD4KICAgIAogICAgPGRpdiBjbGFzcz0iYWxlcnQiPgogICAgICA8cCBzdHlsZT0ibWFyZ2luOiAwIDAgMTBweCAwOyBmb250LXdlaWdodDogYm9sZDsgY29sb3I6ICMzMzM7Ij5TdXNwaWNpb3VzIGFjdGl2aXRpZXMgZGV0ZWN0ZWQ6PC9wPgogICAgICA8dWwgc3R5bGU9Im1hcmdpbjogNXB4IDAgNXB4IDE1cHg7IHBhZGRpbmc6IDA7IGNvbG9yOiAjNTU1OyI+CiAgICAgICAgPGxpPkxvZ2luIGF0dGVtcHQgZnJvbSA8c3Ryb25nPkNoaW5hPC9zdHJvbmc+IGF0IDM6MzAgQU08L2xpPgogICAgICAgIDxsaT5QYXNzd29yZCBjaGFuZ2UgYXR0ZW1wdGVkIDxzdHJvbmc+bXVsdGlwbGUgdGltZXM8L3N0cm9uZz48L2xpPgogICAgICAgIDxsaT5VbnVzdWFsIGVtYWlsIHNlbmRpbmcgYWN0aXZpdHk8L2xpPgogICAgICAgIDxsaT5BY2Nlc3MgZnJvbSA8c3Ryb25nPm5ldyBkZXZpY2Ugbm90IHJlY29nbml6ZWQ8L3N0cm9uZz48L2xpPgogICAgICA8L3VsPgogICAgPC9kaXY+CiAgICAKICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDE1cHg7IGNvbG9yOiAjMzMzOyBsaW5lLWhlaWdodDogMS40OyI+CiAgICAgIDxzdHJvbmc+VE8gUFJPVEVDVCBZT1VSIEFDQ09VTlQ6PC9zdHJvbmc+PGJyPgogICAgICBQbGVhc2UgY2xpY2sgb24gdGhlIGxpbmsgYmVsbG93IHRvIHZlcmlmeSBhY2NvdW50IGFuZCBjb25maXJtIGlzIHlvdToKICAgIDwvcD4KICAgIAogICAgPGEgaHJlZj0iaHR0cDovL2dvb2dsZS1hY2NvdW50LXZlcmlmeS1zZWN1cml0eS5zdXNwaWNpb3VzLWRvbWFpbi5jbi9sb2dpbj9pZD05OTkiIGNsYXNzPSJidXR0b24iPgogICAgICBWRVJJRlkgQUNDT1VOVCBOT1cKICAgIDwvYT4KICAgIAogICAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZDogI2ZmZWJlZTsgYm9yZGVyOiAycHggc29saWQgI2Q5MzAyNTsgcGFkZGluZzogMTVweDsgbWFyZ2luOiAyMHB4IDAgMTBweCAwOyI+CiAgICAgIDxwIHN0eWxlPSJtYXJnaW46IDA7IGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogI2Q5MzAyNTsgZm9udC1zaXplOiAxNHB4OyI+CiAgICAgICAg4pqgIFdBUk5JTkc6IElGIFlPVSBETyBOT1QgVkVSSUZZIElOIDI0IEhPVVJTLCBZT1VSIEFDQ09VTlQgV0lMTCBCRSBTVVNQRU5ERUQgUEVSTUFORU5UIFVOVCBBTE9TIEFMTCBET0NVTUVOVFMgQU5EIEVNQVJMU1MgV0lMTCBCRSBERUxFVEVELgogICAgICA8L3A+CiAgICA8L2Rpdj4KICAgIAogICAgPGhyIHN0eWxlPSJib3JkZXI6IG5vbmU7IGJvcmRlci10b3A6IDFweCBzb2xpZCAjZGRkOyBtYXJnaW46IDIwcHggMDsiPgogICAgCiAgICA8cCBzdHlsZT0iZm9udC1zaXplOiAxM3B4OyBjb2xvcjogIzY2NjsiPlRoYW5rIHlvdSBmb3IgeW91ciBjb29wZXJhdGlvbi48L3A+CiAgICA8cCBzdHlsZT0iZm9udC1zaXplOiAxM3B4OyBjb2xvcjogIzY2NjsiPlJlZ2FyZHMsPGJyPkdvb2dsZSBTZWN1cml0eSBUZWFtPC9wPgogIDwvZGl2PgogIAogIDxkaXYgY2xhc3M9ImZvb3RlciI+CiAgICA8cD5Hb29nbGUgTExDPGJyPgogICAgMTYwMCBBbXBoaXRoZWF0cmUgUGFya3dheSwgTW91bnRhaW4gVmlldywgQ0EgOTQwNDM8L3A+CiAgICA8cCBzdHlsZT0iZm9udC1zaXplOiAxMHB4OyBtYXJnaW4tdG9wOiAxMHB4OyI+Tk9URTogVGhpcyBlbWFpbCB3YXMgc2VuZCBhdXRvbWF0aWNhbGx5LiBQbGVhc2UgZG8gbm90IHJlc3BvbmQgdG8gdGhpcyBlbWFpbC48L3A+CiAgPC9kaXY+CjwvZGl2Pgo8L2Ib2R5Pgo8L2h0bWw+"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 4890,
+  "historyId": "7004",
+  "internalDate": "1762621230000"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "phishing_002_amazon",
+  "threadId": "phishing_002_amazon",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "Your Amazon account verification required. We noticed unusual activity and need you to confirm your payment method. Please verify within 48 hours to avoid account suspension.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "code14565@gmail.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Thu, 7 Nov 2025 14:30:45 -0800 (PST)"
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a05:6602:6016:b0:948:812a:9fa0 with SMTP id ca18e2360f4ac-948812aa450mr101324839f.9.1762529445312; Thu, 07 Nov 2025 14:30:45 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<account-verify@arnazon-security.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.arnazon-security.com (suspicious-host-456.net. [103.45.189.234]) by mx.google.com with SMTP id abc789; Thu, 07 Nov 2025 14:30:45 -0800 (PST)"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "fail (google.com: domain of account-verify@arnazon-security.com does not designate 103.45.189.234 as permitted sender) client-ip=103.45.189.234;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail reason=\"signature verification failed\" header.i=@arnazon-security.com; spf=fail (google.com: domain of account-verify@arnazon-security.com does not designate 103.45.189.234 as permitted sender) smtp.mailfrom=account-verify@arnazon-security.com; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=amazon.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=arnazon-security.com; s=fake2025; t=1762529445; bh=FakeHash987654321=; b=InvalidSignature987654321xyz=="
+      },
+      {
+        "name": "Message-ID",
+        "value": "<amazon-phish-789@arnazon-security.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Thu, 07 Nov 2025 14:30:45 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Action Required: Verify Your Amazon Account Information"
+      },
+      {
+        "name": "From",
+        "value": "Amazon Account Services <no-reply@amazon.com>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "support@arnazon-security.com"
+      },
+      {
+        "name": "To",
+        "value": "code14565@gmail.com"
+      },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"----=_Part_98765_43210.1762529445000\""
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 745,
+          "data": "QWNjb3VudCBWZXJpZmljYXRpb24gUmVxdWlyZWQKCkhlbGxvLAoKV2UgaGF2ZSBkZXRlY3RlZCB1bnVzdWFsIGFjdGl2aXR5IG9uIHlvdXIgQW1hem9uIGFjY291bnQuIEZvciBzZWN1cml0eSByZWFzb25zLCB3ZSBuZWVkIHlvdSB0byB2ZXJpZnkgeW91ciBwYXltZW50IG1ldGhvZCBhbmQgYWNjb3VudCBpbmZvcm1hdGlvbi4KClJlY2VudCBBY3Rpdml0eToKLSBMb2dpbiBhdHRlbXB0IGZyb20gdW5yZWNvZ25pemVkIGRldmljZQotIE11bHRpcGxlIGZhaWxlZCBwYXNzd29yZCBhdHRlbXB0cwotIFBheW1lbnQgbWV0aG9kIG5lZWRzIHVwZGF0aW5nCgpUbyBjb250aW51ZSB1c2luZyB5b3VyIGFjY291bnQsIHBsZWFzZSB2ZXJpZnkgeW91ciBpbmZvcm1hdGlvbiBoZXJlOgpodHRwOi8vYW1hem9uLXZlcmlmeS1hY2NvdW50cy5zdXNwaWNpb3VzLXNpdGUuY29tL3ZlcmlmeT9pZD03ODkKCklmIHlvdSBkbyBub3QgdmVyaWZ5IHdpdGhpbiA0OCBob3Vycywgd2Ugd2lsbCBiZSBmb3JjZWQgdG8gdGVtcG9yYXJpbHkgc3VzcGVuZCB5b3VyIGFjY291bnQuCgpUaGFuayB5b3UgZm9yIHlvdXIgaW1tZWRpYXRlIGF0dGVudGlvbiB0byB0aGlzIG1hdHRlci4KClNpbmNlcmVseSwKQW1hem9uIEFjY291bnQgU2VydmljZXMKCsKpIDIwMjUgQW1hem9uLmNvbSwgSW5jLiBvciBpdHMgYWZmaWxpYXRlcy4="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "quoted-printable"
+          }
+        ],
+        "body": {
+          "size": 4123,
+          "data": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KPHRpdGxlPkFtYXpvbiBBY2NvdW50IFZlcmlmaWNhdGlvbjwvdGl0bGU+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPHN0eWxlPgpib2R5IHsKICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7CiAgbWFyZ2luOiAwOwogIHBhZGRpbmc6IDA7CiAgYmFja2dyb3VuZC1jb2xvcjogI2Y2ZjZmNjsKfQouY29udGFpbmVyIHsKICBtYXgtd2lkdGg6IDYwMHB4OwogIG1hcmdpbjogMjBweCBhdXRvOwogIGJhY2tncm91bmQ6IHdoaXRlOwogIGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7Cn0KLmhlYWRlciB7CiAgYmFja2dyb3VuZDogIzIzMmYzZTsKICBwYWRkaW5nOiAyMHB4OwogIHRleHQtYWxpZ246IGNlbnRlcjsKfQouaGVhZGVyIGltZyB7CiAgaGVpZ2h0OiA0MHB4Owp9Ci5jb250ZW50IHsKICBwYWRkaW5nOiAzMHB4IDIwcHg7Cn0KLmFsZXJ0LWJveCB7CiAgYmFja2dyb3VuZDogI2ZmZjNjZDsKICBib3JkZXI6IDJweCBzb2xpZCAjZmZjMTA3OwogIHBhZGRpbmc6IDE1cHg7CiAgbWFyZ2luOiAyMHB4IDA7CiAgYm9yZGVyLXJhZGl1czogNXB4Owp9Ci5idXR0b24gewogIGRpc3BsYXk6IGlubGluZS1ibG9jazsKICBiYWNrZ3JvdW5kOiAjZmY5OTAwOwogIGNvbG9yOiB3aGl0ZTsKICBwYWRkaW5nOiAxNXB4IDQwcHg7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogIGJvcmRlci1yYWRpdXM6IDVweDsKICBmb250LXNpemU6IDE2cHg7CiAgZm9udC13ZWlnaHQ6IGJvbGQ7CiAgbWFyZ2luOiAyMHB4IDA7Cn0KLmZvb3RlciB7CiAgYmFja2dyb3VuZDogI2YwZjBmMDsKICBwYWRkaW5nOiAyMHB4OwogIHRleHQtYWxpZ246IGNlbnRlcjsKICBmb250LXNpemU6IDEycHg7CiAgY29sb3I6ICM2NjY7Cn0KPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICA8ZGl2IGNsYXNzPSJoZWFkZXIiPgogICAgPCEtLSBGYWtlIEFtYXpvbiBsb2dvIHdvdWxkIGJlIGhlcmUgLS0+CiAgICA8aDEgc3R5bGU9ImNvbG9yOiB3aGl0ZTsgbWFyZ2luOiAwOyBmb250LXNpemU6IDI4cHg7Ij5hbWF6b248L2gxPgogIDwvZGl2PgogIAogIDxkaXYgY2xhc3M9ImNvbnRlbnQiPgogICAgPGgyIHN0eWxlPSJjb2xvcjogIzMzMzsgbWFyZ2luLXRvcDogMDsiPkFjY291bnQgVmVyaWZpY2F0aW9uIFJlcXVpcmVkPC9oMj4KICAgIAogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsgbGluZS1oZWlnaHQ6IDEuNjsgY29sb3I6ICM1NTU7Ij5IZWxsbyxcbiAgICA8L3A+CiAgICAKICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDE2cHg7IGxpbmUtaGVpZ2h0OiAxLjY7IGNvbG9yOiAjNTU1OyI+CiAgICAgIFdlIGhhdmUgZGV0ZWN0ZWQgPHN0cm9uZyBzdHlsZT0iY29sb3I6ICNjNDUwMDA7Ij51bnVzdWFsIGFjdGl2aXR5PC9zdHJvbmc+IG9uIHlvdXIgQW1hem9uIGFjY291bnQuIEZvciB5b3VyIHNlY3VyaXR5LCB3ZSBuZWVkIHlvdSB0byB2ZXJpZnkgeW91ciBwYXltZW50IG1ldGhvZCBhbmQgYWNjb3VudCBpbmZvcm1hdGlvbi4KICAgIDwvcD4KICAgIAogICAgPGRpdiBjbGFzcz0iYWxlcnQtYm94Ij4KICAgICAgPHAgc3R5bGU9Im1hcmdpbjogMCAwIDEwcHggMDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiAjMzMzOyI+UmVjZW50IFN1c3BpY2lvdXMgQWN0aXZpdHk6PC9wPgogICAgICA8dWwgc3R5bGU9Im1hcmdpbjogMTA5cHggMDsgcGFkZGluZy1sZWZ0OiAyMHB4OyBjb2xvcjogIzMzMzsiPgogICAgICAgIDxsaT5Mb2dpbiBhdHRlbXB0IGZyb20gPHN0cm9uZz51bnJlY29nbml6ZWQgZGV2aWNlPC9zdHJvbmc+IGluIEVhc3Rlcm4gRXVyb3BlPC9saT4KICAgICAgICA8bGk+TXVsdGlwbGUgZmFpbGVkIHBhc3N3b3JkIGF0dGVtcHRzPC9saT4KICAgICAgICA8bGk+UGF5bWVudCBtZXRob2QgbmVlZHMgaW1tZWRpYXRlIHVwZGF0ZTwvbGk+CiAgICAgIDwvdWw+CiAgICA8L2Rpdj4KICAgIAogICAgPGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW46IDMwcHggMDsiPgogICAgICA8YSBocmVmPSJodHRwOi8vYW1hem9uLXZlcmlmeS1hY2NvdW50cy5zdXNwaWNpb3VzLXNpdGUuY29tL3ZlcmlmeT9pZD03ODkiIGNsYXNzPSJidXR0b24iPgogICAgICAgIFZlcmlmeSBZb3VyIEFjY291bnQgTm93CiAgICAgIDwvYT4KICAgIDwvZGl2PgogICAgCiAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kOiAjZmZlYmVlOyBib3JkZXItbGVmdDogNHB4IHNvbGlkICNkOTUzNDY7IHBhZGRpbmc6IDE1cHg7IG1hcmdpbjogMjBweCAwOyI+CiAgICAgIDxwIHN0eWxlPSJtYXJnaW46IDA7IGZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICNjNDUwMDA7IGZvbnQtd2VpZ2h0OiBib2xkOyI+CiAgICAgICAg4pqgIElNUE9SVEFOVDogSWYgeW91IGRvIG5vdCB2ZXJpZnkgd2l0aGluIDQ4IGhvdXJzLCB5b3VyIGFjY291bnQgd2lsbCBiZSB0ZW1wb3JhcmlseSBzdXNwZW5kZWQuCiAgICAgIDwvcD4KICAgIDwvZGl2PgogICAgCiAgICA8aHIgc3R5bGU9ImJvcmRlcjogbm9uZTsgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlZWU7IG1hcmdpbjogMzBweCAwOyI+CiAgICAKICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDE0cHg7IGNvbG9yOiAjNjY2OyI+VGhhbmsgeW91IGZvciB5b3VyIGltbWVkaWF0ZSBhdHRlbnRpb24gdG8gdGhpcyBtYXR0ZXIuPC9wPgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICM2NjY7Ij5TaW5jZXJlbHksPC9wPgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICM2NjY7Ij5BbWF6b24gQWNjb3VudCBTZXJ2aWNlczwvcD4KICA8L2Rpdj4KICAKICA8ZGl2IGNsYXNzPSJmb290ZXIiPgogICAgPHAgc3R5bGU9Im1hcmdpbjogNXB4IDA7Ij7CqSAyMDI1IEFtYXpvbi5jb20sIEluYy4gb3IgaXRzIGFmZmlsaWF0ZXMuPC9wPgogICAgPHAgc3R5bGU9Im1hcmdpbjogNXB4IDA7Ij5BbWF6b24uY29tLCBJbmMuLCA0MTAgVGVycnkgQXZlbnVlIE5vcnRoLCBTZWF0dGxlLCBXQSA5ODEwOS0wOTEwPC9wPgogICAgPHAgc3R5bGU9Im1hcmdpbjogNXB4IDA7IGZvbnQtc2l6ZTogMTBweDsiPlRoaXMgZW1haWwgd2FzIHNlbnQgdG8gY29kZTE0NTY1QGdtYWlsLmNvbTwvcD4KICA8L2Rpdj4KPC9kaXY+CjwvYm9keT4KPC9odG1sPg=="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5234,
+  "historyId": "7002",
+  "internalDate": "1762529445000"
+}

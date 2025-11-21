@@ -1,0 +1,9 @@
+Delivered-To: user@example.com
+Return-Path: <secure-docs@phish-relay.com>
+Received: from mail.phish-relay.com (phish-relay.com. [198.51.100.124]) by mx.google.com; Wed, 19 Nov 2025 11:20:00 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail; spf=fail (google.com: domain of secure-docs@phish-relay.com does not designate 198.51.100.124 as permitted sender); dmarc=fail (p=REJECT dis=NONE) header.from=contoso.com
+Message-ID: <css-phish-789@phish-relay.com>
+Date: Wed, 19 Nov 2025 11:20:00 -0800
+Subject: You have received a secure document
+From: Contoso Docs <secure@contoso.com>
+To: user@example.com

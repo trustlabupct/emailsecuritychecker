@@ -1,0 +1,8 @@
+Email ID: phishing_018_calendar_invite
+Subject: Invitation: Project Sync-Up @ Thu Nov 20, 2025 5pm - 6pm (UTC)
+From: Zoom <meetings@zoom.us>
+To: user@example.com
+Date: Thu, 20 Nov 2025 12:00:00 -0800
+
+================================================================================
+

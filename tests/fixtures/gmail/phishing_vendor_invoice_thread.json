@@ -1,0 +1,144 @@
+{
+  "id": "phishing_012_vendor_invoice",
+  "threadId": "phishing_012_vendor_invoice",
+  "labelIds": [
+    "UNREAD",
+    "INBOX",
+    "IMPORTANT"
+  ],
+  "snippet": "Re: Outstanding invoice 90877 Hi Kelly, Please see the attached remittance advice. We adjusted the bank routing info...",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "ap@example.com"
+      },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:5020:14a8:b0:1a2:a1a5:36a5 with SMTP id oa45csp556677rdb; Fri, 14 Nov 2025 09:32:41 -0800 (PST)"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<marina@acmeparts-pay.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from relay.acmeparts-pay.com (smtp.acmeparts-pay.com. [212.102.43.108]) by mx.google.com with ESMTPS id l4-20020a5d0f34000000b002c571b8e43csi1733345qka.512.2025.11.14.09.32.40 for <ap@example.com>; Fri, 14 Nov 2025 09:32:41 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail (body hash mismatch) header.i=@acmeparts-pay.com; spf=fail (google.com: domain of marina@acmeparts-pay.com does not designate 212.102.43.108 as permitted sender) smtp.mailfrom=marina@acmeparts-pay.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=acmeparts.co"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<20251114093240.556677@acmeparts-pay.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Fri, 14 Nov 2025 09:32:40 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "Re: Outstanding invoice 90877"
+      },
+      {
+        "name": "From",
+        "value": "Marina Alvarez <marina@acmeparts.co>"
+      },
+      {
+        "name": "Reply-To",
+        "value": "Marina Alvarez <marina@acmeparts-pay.com>"
+      },
+      {
+        "name": "In-Reply-To",
+        "value": "<20251113160322.GF90877@acmeparts.co>"
+      },
+      {
+        "name": "References",
+        "value": "<20251113160322.GF90877@acmeparts.co>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "multipart/alternative",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0
+        },
+        "parts": [
+          {
+            "partId": "0.0",
+            "mimeType": "text/plain",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/plain; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 256,
+              "data": "UmU6IE91dHN0YW5kaW5nIGludm9pY2UgOTA4NzcKCkhpIEtlbGx5LAoKUGxlYXNlIHNlZSB0aGUgYXR0YWNoZWQgcmVtaXR0YW5jZSBhZHZpY2UuIFdlIGFkanVzdGVkIHRoZSBiYW5rIHJvdXRpbmcgaW5mby4gRXhlY3V0ZSBwYXltZW50IHRvZGF5IHNvIHNoaXBtZW50IGlzIHJlbGVhc2VkLgoKUmVnYXJkcywKTWFyaW5hCkFjbWUgUGFydHM"
+            }
+          },
+          {
+            "partId": "0.1",
+            "mimeType": "text/html",
+            "filename": "",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=UTF-8"
+              },
+              {
+                "name": "Content-Transfer-Encoding",
+                "value": "base64"
+              }
+            ],
+            "body": {
+              "size": 520,
+              "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGJvZHkgc3R5bGU9ImZvbnQtZmFtaWx5OlRhaG9tYSxzYW5zLXNlcmlmO2NvbG9yOiMyMjIiPjxwPkhpIEtlbGx5LDwvcD48cD5QbGVhc2Ugc2VlIHRoZSBhdHRhY2hlZCByZW1pdHRhbmNlIGFkdmljZS4gV2UgdXBkYXRlZCB0aGUgcm91dGluZyBpbnN0cnVjdGlvbnMgYmVsb3figJR1c2UgdGhlbSBmb3IgdGhpcyBwYXltZW50IHNvIHRoZSBzaGlwbWVudCByZWxlYXNlcyB0b2RheS48L3A-PHA-PHN0cm9uZz5Sb3V0aW5nOjwvc3Ryb25nPiAwMjYwMDk1OTM8YnI-PHN0cm9uZz5BY2NvdW50Ojwvc3Ryb25nPiAxMTg3NTQyMDkzPC9wPjxwPlJlZ2FyZHMsPGJyPk1hcmluYTxicj5BY21lIFBhcnRzPC9wPjwvYm9keT48L2h0bWw-"
+            }
+          }
+        ]
+      },
+      {
+        "partId": "1",
+        "mimeType": "application/pdf",
+        "filename": "RemittanceAdvice.pdf",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/pdf; name=RemittanceAdvice.pdf"
+          },
+          {
+            "name": "Content-Disposition",
+            "value": "attachment; filename=RemittanceAdvice.pdf"
+          },
+          {
+            "name": "Content-Transfer-Encoding",
+            "value": "base64"
+          }
+        ],
+        "body": {
+          "size": 1024,
+          "data": "RmFrZSBQREYgQ29udGVudA"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 6400,
+  "historyId": "7788990011"
+}

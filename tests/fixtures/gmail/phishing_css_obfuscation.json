@@ -1,0 +1,89 @@
+{
+  "id": "phishing_017_css_obfuscation",
+  "threadId": "phishing_017_css_obfuscation",
+  "labelIds": [
+    "UNREAD",
+    "INBOX"
+  ],
+  "snippet": "A secure document has been shared with you. Please review it at the link inside.",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Delivered-To",
+        "value": "user@example.com"
+      },
+      {
+        "name": "Return-Path",
+        "value": "<secure-docs@phish-relay.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail.phish-relay.com (phish-relay.com. [198.51.100.124]) by mx.google.com; Wed, 19 Nov 2025 11:20:00 -0800 (PST)"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com; dkim=fail; spf=fail (google.com: domain of secure-docs@phish-relay.com does not designate 198.51.100.124 as permitted sender); dmarc=fail (p=REJECT dis=NONE) header.from=contoso.com"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<css-phish-789@phish-relay.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Wed, 19 Nov 2025 11:20:00 -0800"
+      },
+      {
+        "name": "Subject",
+        "value": "You have received a secure document"
+      },
+      {
+        "name": "From",
+        "value": "Contoso Docs <secure@contoso.com>"
+      },
+      {
+        "name": "To",
+        "value": "user@example.com"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=UTF-8"
+          }
+        ],
+        "body": {
+          "size": 200,
+          "data": "UGxlYXNlIHJldmlldyB0aGUgZG9jdW1lbnQgYXQgaHR0cHM6Ly9zYWZlLnBvcnRhbC5jb250b3NvLmNvbS9kb2NzLzEyMzQ1LgpBY2Nlc3MgZXhwaXJlcyBpbiAyNCBob3Vycy4="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=UTF-8"
+          }
+        ],
+        "body": {
+          "size": 1200,
+          "data": "PCFET0NUWVBFIGh0bWw-PGh0bWw-PGhlYWQ-PHN0eWxlPi5saW5rLWNvbnRhaW5lcntwb3NpdGlvbjpyZWxhdGl2ZTtkaXNwbGF5OmlubGluZS1ibG9jazt0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lO2NvbG9yOmJsdWU7Y3Vyc29yOnBvaW50ZXI7fS5yZWFsLWxpbmt7b3BhY2l0eTowO2ZvbnQtc2l6ZToyNHB4O30uZmFrZS1saW5rLW92ZXJsYXl7cG9zaXRpb246YWJzb2x1dGU7dG9wOjA7bGVmdDowO2ZvbnQtc2l6ZToxNnB4O2NvbG9yOmJsdWU7cG9pbnRlci1ldmVudHM6bm9uZTt9PC9zdHlsZT48L2hlYWQ-PGJvZHk-PHA-UGxlYXNlIHJldmlldyB0aGUgc2VjdXJlIGRvY3VtZW50IGJ5IGNsaWNraW5nIHRoZSBsaW5rIGJlbG93OjwvcD48ZGl2IGNsYXNzPSJsaW5rLWNvbnRhaW5lciI-PGEgaHJlZj0iaHR0cHM6Ly9tYWxpY2lvdXMtcGhpc2hpbmctc2l0ZS5jb20vZG9jdW1lbnQtdmlld2VyIiBjbGFzcz0icmVhbC1saW5rIj4gQWNjZXNzIFlvdXIgU2VjdXJlIERvY3VtZW50IE5vdyA8L2E-PHNwYW4gY2xhc3M9ImZha2UtbGluay1vdmVybGF5Ij5odHRwczovL3NhZmUucG9ydGFsLmNvbnRvc28uY29tL2RvY3MvMTIzNDU8L3NwYW4-PC9kaXY-PHA-QWNjZXNzIGV4cGlyZXMgaW4gMjQgaG91cnMuPC9wPjwvYm9keT48L2h0bWw-"
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 3000,
+  "historyId": "phishing_017_css_obfuscation"
+}

@@ -1,0 +1,10 @@
+Delivered-To: finance@example.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Mon, 10 Nov 2025 07:32:18 -0800 (PST)
+Return-Path: <alerts@secure-billing.info>
+Received: from mail.secure-billing.info (malicious-host.example. [103.201.48.77]) by mx.google.com with SMTP id z6-20020a5d53b6000000b002d5f7a5b1a2so1562347qka.12.2025.11.10.07.32.17 for <finance@example.com>; Mon, 10 Nov 2025 07:32:18 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail (no key for signature) header.i=@secure-billing.info; spf=fail (google.com: domain of alerts@secure-billing.info does not designate 103.201.48.77 as permitted sender) smtp.mailfrom=alerts@secure-billing.info; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=accounting-suite.com
+Message-ID: <qrpayment123456@secure-billing.info>
+Date: Mon, 10 Nov 2025 07:32:18 -0800
+Subject: Invoice #784512 Pending - Scan to Pay
+From: Billing Operations <billing@accounting-suite.com>
+Reply-To: support@secure-billing.info

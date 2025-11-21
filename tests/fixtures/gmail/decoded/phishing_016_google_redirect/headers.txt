@@ -1,0 +1,11 @@
+Delivered-To: user@example.com
+Received: by 2002:a05:7413:20a8:b0:1a2:a1a5:36a5 with SMTP id oo40csp868165rdb; Tue, 18 Nov 2025 10:00:00 -0800 (PST)
+Return-Path: <bounces@phishing-domain.com>
+Received: from mail.phishing-domain.com (phishing-domain.com. [198.51.100.123]) by mx.google.com with SMTP id a1b2c3d4; Tue, 18 Nov 2025 10:00:00 -0800 (PST)
+Authentication-Results: mx.google.com; dkim=fail reason="signature verification failed" header.i=@phishing-domain.com; spf=fail (google.com: domain of bounces@phishing-domain.com does not designate 198.51.100.123 as permitted sender) smtp.mailfrom=bounces@phishing-domain.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Message-ID: <phishing-redirect-123@phishing-domain.com>
+Date: Tue, 18 Nov 2025 10:00:00 -0800
+Subject: Document shared with you: "Q4 Financial Projections"
+From: Jane Doe (Google Docs) <docs-noreply@google.com>
+Reply-To: phisher@phishing-domain.com
+To: user@example.com

@@ -1,0 +1,580 @@
+{
+  "extensionName": {
+    "message": "TrustEmail",
+    "description": "El nombre de la extensión"
+  },
+  "extensionDescription": {
+    "message": "Analizador de Correo Electrónico de Gmail",
+    "description": "La descripción de la extensión"
+  },
+  "analyzingEmail": {
+    "message": "TrustEmail: Analizando correo electrónico...",
+    "description": "Mensaje mostrado mientras se analiza el correo electrónico"
+  },
+  "riskScoreLabel": {
+    "message": "Riesgo de TrustEmail",
+    "description": "Etiqueta para la puntuación de riesgo general"
+  },
+  "expandButton": {
+    "message": "Expandir",
+    "description": "Texto del botón para expandir el análisis detallado"
+  },
+  "collapseButton": {
+    "message": "Colapsar",
+    "description": "Texto del botón para colapsar el análisis detallado"
+  },
+  "detailedAnalysisHeading": {
+    "message": "Análisis Detallado del Correo Electrónico para $1",
+    "description": "Encabezado para el panel de análisis detallado, con ID de mensaje como marcador de posición",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "messageId"
+      }
+    }
+  },
+  "copyReportButton": {
+    "message": "Copiar Informe",
+    "description": "Texto del botón para copiar el informe de análisis"
+  },
+  "copyReportAriaLabel": {
+    "message": "Copiar informe completo de análisis",
+    "description": "Etiqueta ARIA para el botón de copiar informe"
+  },
+  "ignoreThreadButton": {
+    "message": "Ignorar Hilo",
+    "description": "Texto del botón para ignorar el hilo de correo electrónico actual"
+  },
+  "ignoreThreadAriaLabel": {
+    "message": "Ignorar este hilo de correo electrónico",
+    "description": "Etiqueta ARIA para el botón de ignorar hilo"
+  },
+  "reanalyzeButton": {
+    "message": "Volver a Analizar",
+    "description": "Texto del botón para volver a analizar el correo electrónico actual"
+  },
+  "reanalyzeAriaLabel": {
+    "message": "Volver a analizar este correo electrónico",
+    "description": "Etiqueta ARIA para el botón de volver a analizar"
+  },
+  "authenticationResultsHeading": {
+    "message": "Resultados de Autenticación",
+    "description": "Encabezado para la sección de resultados de autenticación"
+  },
+  "domainLabel": {
+    "message": "Dominio",
+    "description": "Etiqueta para dominio"
+  },
+  "selectorLabel": {
+    "message": "Selector",
+    "description": "Etiqueta para selector"
+  },
+  "sealCountLabel": {
+    "message": "Conteo de Sellos",
+    "description": "Etiqueta para el conteo de sellos ARC"
+  },
+  "headerAnalysisHeading": {
+    "message": "Análisis de Encabezados",
+    "description": "Encabezado para la sección de análisis de encabezados"
+  },
+  "noHeaderAnomalies": {
+    "message": "No se detectaron anomalías significativas en los encabezados.",
+    "description": "Mensaje cuando no se encuentran anomalías en los encabezados"
+  },
+  "receivedChainHeading": {
+    "message": "Cadena de Recepción",
+    "description": "Encabezado para la sección de cadena de recepción"
+  },
+  "domainAnalysisHeading": {
+    "message": "Análisis de Dominio",
+    "description": "Encabezado para la sección de análisis de dominio"
+  },
+  "punycodeLabel": {
+    "message": "Punycode",
+    "description": "Etiqueta para el estado de punycode"
+  },
+  "yes": {
+    "message": "Sí",
+    "description": "Opción Sí"
+  },
+  "no": {
+    "message": "No",
+    "description": "Opción No"
+  },
+  "reputationSignalsLabel": {
+    "message": "Señales de Reputación",
+    "description": "Etiqueta para señales de reputación"
+  },
+  "noReputationSignals": {
+    "message": "No se detectaron señales de reputación específicas.",
+    "description": "Mensaje cuando no se encuentran señales de reputación"
+  },
+  "contentAnalysisHeading": {
+    "message": "Análisis de Contenido",
+    "description": "Encabezado para la sección de análisis de contenido"
+  },
+  "detectedIbansHeading": {
+    "message": "IBANs Detectados",
+    "description": "Encabezado para la sección de IBANs detectados"
+  },
+  "noIbansDetected": {
+    "message": "No se detectaron IBANs.",
+    "description": "Mensaje cuando no se encuentran IBANs"
+  },
+  "suspiciousLinksHeading": {
+    "message": "Enlaces Sospechosos",
+    "description": "Encabezado para la sección de enlaces sospechosos"
+  },
+  "shortenedLabel": {
+    "message": "Acortado",
+    "description": "Etiqueta para el estado de enlace acortado"
+  },
+  "finalLabel": {
+    "message": "Final",
+    "description": "Etiqueta para la URL final"
+  },
+  "noSuspiciousLinks": {
+    "message": "No se detectaron enlaces sospechosos.",
+    "description": "Mensaje cuando no se encuentran enlaces sospechosos"
+  },
+  "urgencyIndicatorsHeading": {
+    "message": "Indicadores de Urgencia",
+    "description": "Encabezado para la sección de indicadores de urgencia"
+  },
+  "noUrgencyIndicators": {
+    "message": "No se detectaron indicadores de urgencia.",
+    "description": "Mensaje cuando no se encuentran indicadores de urgencia"
+  },
+  "settingsHeading": {
+    "message": "Configuración",
+    "description": "Encabezado para la página de configuración"
+  },
+  "saveSettingsButton": {
+    "message": "Guardar Configuración",
+    "description": "Texto del botón para guardar la configuración"
+  },
+  "settingsSavedAlert": {
+    "message": "¡Configuración guardada!",
+    "description": "Mensaje de alerta cuando se guarda la configuración"
+  },
+  "savedSuccessfully": {
+    "message": "Guardado Exitosamente",
+    "description": "Mensaje de éxito después de guardar"
+  },
+  "performanceIndicatorFast": {
+    "message": "Rápido",
+    "description": "Indicador de rendimiento para funciones rápidas"
+  },
+  "performanceIndicatorModerate": {
+    "message": "Moderado",
+    "description": "Indicador de rendimiento para funciones de velocidad moderada"
+  },
+  "performanceIndicatorSlow": {
+    "message": "Lento",
+    "description": "Indicador de rendimiento para funciones lentas"
+  },
+  "generalSettingsHeading": {
+    "message": "Configuración General",
+    "description": "Encabezado para la sección de configuración general"
+  },
+  "contentAnalysisFeaturesHeading": {
+    "message": "Funciones de Análisis de Contenido",
+    "description": "Encabezado para la sección de funciones de análisis de contenido"
+  },
+  "nlpAnalysisLabel": {
+    "message": "Análisis de tono y lenguaje (NLP)",
+    "description": "Etiqueta para el interruptor de análisis NLP"
+  },
+  "nlpAnalysisDescription": {
+    "message": "Ligero - Detecta lenguaje amenazante, urgente o atractivo",
+    "description": "Descripción para la función de análisis NLP"
+  },
+  "deepLinkAnalysisLabel": {
+    "message": "Detección de enlaces profundos",
+    "description": "Etiqueta para el interruptor de detección de enlaces profundos"
+  },
+  "deepLinkAnalysisDescription": {
+    "message": "Rápido - Identifica enlaces sospechosos a WhatsApp, Telegram, etc.",
+    "description": "Descripción para la función de detección de enlaces profundos"
+  },
+  "qrCodeDecodingLabel": {
+    "message": "Decodificación de códigos QR",
+    "description": "Etiqueta para el interruptor de decodificación de códigos QR"
+  },
+  "qrCodeDecodingDescription": {
+    "message": "Impacto moderado - Extrae y analiza URLs de códigos QR",
+    "description": "Descripción para la función de decodificación de códigos QR"
+  },
+  "ocrAnalysisLabel": {
+    "message": "OCR de imágenes (extracción de texto)",
+    "description": "Etiqueta para el interruptor de análisis OCR"
+  },
+  "ocrAnalysisDescription": {
+    "message": "Impacto significativo - Lee texto incrustado en imágenes (biblioteca ~2MB)",
+    "description": "Descripción para la función de análisis OCR"
+  },
+  "performanceWarning": {
+    "message": "Las funciones a continuación pueden ralentizar el análisis de correo electrónico",
+    "description": "Mensaje de advertencia para funciones que impactan el rendimiento"
+  },
+  "customKeywordsHeading": {
+    "message": "Palabras Clave Personalizadas",
+    "description": "Encabezado para la sección de palabras clave personalizadas"
+  },
+  "urgencyKeywordsLabel": {
+    "message": "Palabras Clave de Urgencia",
+    "description": "Etiqueta para la lista de palabras clave de urgencia"
+  },
+  "urgencyKeywordsDescription": {
+    "message": "Palabras que indican urgencia (p. ej., inmediato, urgente, caduca)",
+    "description": "Descripción para las palabras clave de urgencia"
+  },
+  "scamKeywordsLabel": {
+    "message": "Palabras Clave de Estafa",
+    "description": "Etiqueta para la lista de palabras clave de estafa"
+  },
+  "scamKeywordsDescription": {
+    "message": "Palabras comúnmente usadas en estafas (p. ej., verificar cuenta, suspendido)",
+    "description": "Descripción para las palabras clave de estafa"
+  },
+  "addKeywordPlaceholder": {
+    "message": "Ingrese palabra clave...",
+    "description": "Marcador de posición para el campo de entrada de palabras clave"
+  },
+  "addButton": {
+    "message": "Agregar",
+    "description": "Texto del botón para agregar un elemento"
+  },
+  "domainRulesHeading": {
+    "message": "Reglas de Dominio",
+    "description": "Encabezado para la sección de reglas de dominio"
+  },
+  "allowedDomainsLabel": {
+    "message": "Dominios Permitidos",
+    "description": "Etiqueta para la lista de dominios permitidos"
+  },
+  "allowedDomainsDescription": {
+    "message": "Los correos electrónicos de estos dominios se marcarán como de bajo riesgo",
+    "description": "Descripción para los dominios permitidos"
+  },
+  "blockedDomainsLabel": {
+    "message": "Dominios Bloqueados",
+    "description": "Etiqueta para la lista de dominios bloqueados"
+  },
+  "blockedDomainsDescription": {
+    "message": "Los correos electrónicos de estos dominios se marcarán como de alto riesgo",
+    "description": "Descripción para los dominios bloqueados"
+  },
+  "domainPlaceholder": {
+    "message": "p. ej., empresa.com",
+    "description": "Marcador de posición para el campo de entrada de dominio"
+  },
+  "allowButton": {
+    "message": "Permitir",
+    "description": "Texto del botón para permitir un dominio"
+  },
+  "blockButton": {
+    "message": "Bloquear",
+    "description": "Texto del botón para bloquear un dominio"
+  },
+  "noItemsAdded": {
+    "message": "No se han agregado elementos aún",
+    "description": "Mensaje cuando una lista está vacía"
+  },
+  "removeItemAriaLabel": {
+    "message": "Eliminar $1",
+    "description": "Etiqueta ARIA para el botón de eliminar",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "palabra clave"
+      }
+    }
+  },
+  "historyHeading": {
+    "message": "Historial de Análisis",
+    "description": "Encabezado para la página de historial de análisis"
+  },
+  "analysisSummaryHeading": {
+    "message": "Resumen de Análisis",
+    "description": "Encabezado para la sección de resumen de análisis"
+  },
+  "last24HoursLabel": {
+    "message": "Últimas 24 Horas",
+    "description": "Etiqueta para estadísticas de 24 horas"
+  },
+  "last7DaysLabel": {
+    "message": "Últimos 7 Días",
+    "description": "Etiqueta para estadísticas de 7 días"
+  },
+  "lowRiskLabel": {
+    "message": "Bajo Riesgo",
+    "description": "Etiqueta para la categoría de bajo riesgo"
+  },
+  "mediumRiskLabel": {
+    "message": "Medio",
+    "description": "Etiqueta para la categoría de riesgo medio"
+  },
+  "highRiskLabel": {
+    "message": "Alto Riesgo",
+    "description": "Etiqueta para la categoría de alto riesgo"
+  },
+  "recentHighRiskHeading": {
+    "message": "Correos Electrónicos Recientes de Alto Riesgo",
+    "description": "Encabezado para alertas recientes de alto riesgo"
+  },
+  "noHighRiskDetected": {
+    "message": "No se han detectado correos electrónicos de alto riesgo recientemente",
+    "description": "Mensaje cuando no se encuentran correos electrónicos de alto riesgo"
+  },
+  "recentAnalysesHeading": {
+    "message": "Análisis Recientes",
+    "description": "Encabezado para la lista de análisis recientes"
+  },
+  "noAnalysesYet": {
+    "message": "Aún no hay análisis de correo electrónico",
+    "description": "Mensaje cuando el historial está vacío"
+  },
+  "openEmailPrompt": {
+    "message": "Abra un correo electrónico en Gmail para ver el análisis",
+    "description": "Mensaje para analizar un correo electrónico"
+  },
+  "clearHistoryButton": {
+    "message": "Borrar Historial",
+    "description": "Texto del botón para borrar el historial"
+  },
+  "clearHistoryConfirm": {
+    "message": "¿Está seguro de que desea borrar todo el historial de análisis?",
+    "description": "Mensaje de confirmación para borrar el historial"
+  },
+  "noSubject": {
+    "message": "(sin asunto)",
+    "description": "Marcador de posición cuando el correo electrónico no tiene asunto"
+  },
+  "timeAgoJustNow": {
+    "message": "Justo ahora",
+    "description": "Mensaje de tiempo transcurrido para elementos recientes"
+  },
+  "timeAgoMinutes": {
+    "message": "Hace $1 minuto",
+    "description": "Mensaje de tiempo transcurrido para minutos",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeAgoMinutesPlural": {
+    "message": "Hace $1 minutos",
+    "description": "Mensaje de tiempo transcurrido para múltiples minutos",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeAgoHours": {
+    "message": "Hace $1 hora",
+    "description": "Mensaje de tiempo transcurrido para horas",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "timeAgoHoursPlural": {
+    "message": "Hace $1 horas",
+    "description": "Mensaje de tiempo transcurrido para múltiples horas",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "timeAgoDays": {
+    "message": "Hace $1 día",
+    "description": "Mensaje de tiempo transcurrido para días",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "timeAgoDaysPlural": {
+    "message": "Hace $1 días",
+    "description": "Mensaje de tiempo transcurrido para múltiples días",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "homeButton": {
+    "message": "Inicio",
+    "description": "Texto del botón para navegación al inicio"
+  },
+  "historyButton": {
+    "message": "Historial",
+    "description": "Texto del botón para navegación al historial"
+  },
+  "protectionStatusHeading": {
+    "message": "Estado de Protección",
+    "description": "Encabezado para la sección de estado de protección"
+  },
+  "activeStatus": {
+    "message": "Activo",
+    "description": "Mensaje de estado cuando la extensión está activa"
+  },
+  "monitoringInbox": {
+    "message": "Monitoreando su bandeja de entrada de Gmail",
+    "description": "Descripción del monitoreo activo"
+  },
+  "activeFeaturesHeading": {
+    "message": "Funciones Activas",
+    "description": "Encabezado para la lista de funciones activas"
+  },
+  "quickActionsHeading": {
+    "message": "Acciones Rápidas",
+    "description": "Encabezado para la sección de acciones rápidas"
+  },
+  "viewDocumentationButton": {
+    "message": "Ver Documentación",
+    "description": "Texto del botón para ver la documentación"
+  },
+  "reportIssueButton": {
+    "message": "Reportar un Problema",
+    "description": "Texto del botón para reportar un problema"
+  },
+  "versionLabel": {
+    "message": "Versión $1",
+    "description": "Etiqueta para el número de versión",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "0.3.0"
+      }
+    }
+  },
+  "analyzingEmailSecurity": {
+    "message": "Analizando la seguridad del correo...",
+    "description": "Loading message while analyzing email"
+  },
+  "riskLabel": {
+    "message": "Riesgo",
+    "description": "Label for risk level"
+  },
+  "spfLabel": {
+    "message": "SPF",
+    "description": "SPF authentication label"
+  },
+  "dkimLabel": {
+    "message": "DKIM",
+    "description": "DKIM authentication label"
+  },
+  "dmarcLabel": {
+    "message": "DMARC",
+    "description": "DMARC authentication label"
+  },
+  "detailsButton": {
+    "message": "Detalles",
+    "description": "Button text to show details"
+  },
+  "hideButton": {
+    "message": "Ocultar",
+    "description": "Button text to hide details"
+  },
+  "authenticationFailed": {
+    "message": "Autenticación de TrustEmail fallida:",
+    "description": "Authentication failure heading"
+  },
+  "browserSigninRequired": {
+    "message": "Por favor, inicie sesión en su navegador (por ejemplo, Chrome, Chromium) para usar esta extensión. Esto es necesario para el acceso seguro a la API de Gmail. Esta extensión no funciona en navegadores que no admiten servicios de inicio de sesión de Google.",
+    "description": "Message explaining browser sign-in requirement"
+  },
+  "featureAuthenticationAnalysis": {
+    "message": "Análisis de autenticación (SPF, DKIM, DMARC)",
+    "description": "Feature description for authentication analysis"
+  },
+  "featureDomainReputation": {
+    "message": "Verificación de reputación de dominio",
+    "description": "Feature description for domain reputation checking"
+  },
+  "featurePaymentDetection": {
+    "message": "Detección de información de pago",
+    "description": "Feature description for payment information detection"
+  },
+  "featureSuspiciousLinks": {
+    "message": "Análisis de enlaces sospechosos",
+    "description": "Feature description for suspicious link analysis"
+  },
+  "featureToneAnalysis": {
+    "message": "Análisis de tono y lenguaje (NLP)",
+    "description": "Feature description for tone and language analysis"
+  },
+  "featureAttachmentRisk": {
+    "message": "Evaluación de riesgo de archivos adjuntos",
+    "description": "Feature description for attachment risk assessment"
+  },
+  "errorHeading": {
+    "message": "Error",
+    "description": "Error heading"
+  },
+  "initializationError": {
+    "message": "No se pudo inicializar TrustEmail",
+    "description": "Initialization error message"
+  },
+  "detailedPanelHeading": {
+    "message": "Análisis detallado",
+    "description": "Heading for detailed analysis panel"
+  },
+  "ignoreButton": {
+    "message": "Ignorar",
+    "description": "Button text to ignore thread"
+  },
+  "threadIdLabel": {
+    "message": "ID de hilo:",
+    "description": "Label for thread ID"
+  },
+  "messageIdLabel": {
+    "message": "ID de mensaje:",
+    "description": "Label for message ID"
+  },
+  "arcLabel": {
+    "message": "ARC",
+    "description": "ARC authentication label"
+  },
+  "sealsLabel": {
+    "message": "Sellos",
+    "description": "Label for ARC seals count"
+  },
+  "headerAnomaliesHeading": {
+    "message": "Anomalías de encabezado",
+    "description": "Heading for header anomalies section"
+  },
+  "punycodeDetected": {
+    "message": "Punycode detectado",
+    "description": "Label for punycode detection"
+  },
+  "reputationIssues": {
+    "message": "Problemas de reputación",
+    "description": "Label for reputation issues"
+  },
+  "noReputationIssues": {
+    "message": "Sin problemas de reputación",
+    "description": "Message when no reputation issues found"
+  },
+  "finalUrlLabel": {
+    "message": "Final",
+    "description": "Label for final URL"
+  },
+  "selectEmailPrompt": {
+    "message": "Select an email to analyze its security",
+    "description": "Message shown when user is viewing inbox without selecting an email"
+  }
+}
