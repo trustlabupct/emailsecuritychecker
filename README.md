@@ -14,6 +14,11 @@ TrustEmail is a Chrome extension that inspects Gmail threads for phishing and fr
 - Build production bundle: `npm run build` → output in `dist/` (load as an unpacked extension in Chrome; stay signed in so Gmail OAuth works)
 - Tests: `npm test`
 
+## Development & Testing (OAuth2)
+Since the extension uses the Gmail API, authentication requires specific setup during development:
+1.  **Test Users**: While the app is in "Testing" mode (unpublished), you **must** add your email address to the "Test users" list in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent) under "OAuth consent screen".
+2.  **Extension ID**: The OAuth2 client ID is tied to a specific Extension ID. Ensure the ID in `chrome://extensions` matches the one configured in the Google Cloud Console credentials.
+
 ## Pack (.crx)
 - Build first: `npm run build`
 - In Chrome: `chrome://extensions` → enable Developer mode → Pack extension → choose the `dist/` folder
