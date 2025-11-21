@@ -4,7 +4,7 @@
     "description": "El nombre de la extensión"
   },
   "extensionDescription": {
-    "message": "Analizador de Correo Electrónico de Gmail",
+    "message": "Analice los hilos de Gmail en busca de riesgos de phishing y fraude con comprobaciones en el dispositivo de encabezados, enlaces y contenido.",
     "description": "La descripción de la extensión"
   },
   "analyzingEmail": {

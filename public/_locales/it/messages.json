@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extensionDescription": {
-    "message": "Gmail Email Analyzer",
+    "message": "Analizza i thread di Gmail per rischi di phishing e frode con controlli sul dispositivo di intestazioni, link e contenuti.",
     "description": "The description of the extension"
   },
   "analyzingEmail": {
