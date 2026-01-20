@@ -29,4 +29,4 @@ Since the extension uses the Gmail API, authentication requires specific setup d
 - Run tests: `npm test`
 - Build: `npm run build`
 - Create upload zip: `cd dist && zip -r ../trustemail-webstore.zip .`
-- Publish: push code (without `dist/` or `node_modules/`), host `PRIVACY.md`/`TERMS.md` on http://trustlab.upct.es, then upload the zip in the Chrome Web Store dashboard
+- Publish: push code (without `dist/` or `node_modules/`), host `PRIVACY.md`/`TERMS.md` on https://trustlab.upct.es, then upload the zip in the Chrome Web Store dashboard
